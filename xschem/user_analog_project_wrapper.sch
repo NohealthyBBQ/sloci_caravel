@@ -40,33 +40,62 @@ N 3690 -300 3730 -300 {
 lab=io_in[18]}
 N 3670 -240 3730 -240 {
 lab=io_analog[10]}
-N 3280 -190 3350 -190 {}
-N 3280 -160 3350 -160 {}
-N 3280 -130 3350 -130 {}
-N 3290 -100 3350 -100 {}
-N 3280 -70 3350 -70 {}
-N 3280 -40 3350 -40 {}
-N 3290 -10 3350 -10 {}
-N 3280 20 3350 20 {}
-N 3230 80 3290 80 {}
-N 3230 110 3290 110 {}
-N 3230 180 3280 180 {}
-N 3290 210 3370 210 {}
-N 3290 290 3370 290 {}
-N 3180 410 3260 410 {}
-N 3170 440 3260 440 {}
-N 3200 320 3280 320 {}
-N 3200 350 3290 350 {}
-N 3190 500 3260 500 {}
-N 3170 530 3250 530 {}
-N 3180 600 3270 600 {}
-N 3270 570 3390 570 {}
-N 3250 -470 3350 -470 {}
-N 3250 -440 3350 -440 {}
-N 3250 -410 3350 -410 {}
-N 3250 -350 3350 -350 {}
-N 3250 -290 3340 -290 {}
-N 3250 -260 3340 -260 {}
+N 3280 -190 3350 -190 {
+lab=wb_clk_i}
+N 3280 -160 3350 -160 {
+lab=wb_rst_i}
+N 3280 -130 3350 -130 {
+lab=wbs_stb_i}
+N 3290 -100 3350 -100 {
+lab=wbs_cyc_i}
+N 3280 -70 3350 -70 {
+lab=wbs_we_i}
+N 3280 -40 3350 -40 {
+lab=wbs_sel_i[3:0]}
+N 3290 -10 3350 -10 {
+lab=wbs_dat_i[31:0]}
+N 3280 20 3350 20 {
+lab=wbs_we_i}
+N 3230 80 3290 80 {
+lab=wbs_ack_o}
+N 3230 110 3290 110 {
+lab=wbs_dat_o[31:0]}
+N 3230 180 3280 180 {
+lab=la_data_out[127:0]}
+N 3290 210 3370 210 {
+lab=la_oenb[127:0]}
+N 3290 290 3370 290 {
+lab=io_in_3v3[26:0]}
+N 3180 410 3260 410 {
+lab=gpio_analog[17:0]}
+N 3170 440 3260 440 {
+lab=gpio_analog[17:0]}
+N 3200 320 3280 320 {
+lab=io_out[26:0]}
+N 3200 350 3290 350 {
+lab=io_oeb[26:0]}
+N 3190 500 3260 500 {
+lab=io_clamp_high[2:0]}
+N 3170 530 3250 530 {
+lab=io_clamp_low[2:0]}
+N 3180 600 3270 600 {
+lab=user_irq[2:0]}
+N 3270 570 3390 570 {
+lab=user_clock2}
+N 3250 -470 3350 -470 {
+lab=#net2}
+N 3250 -440 3350 -440 {
+lab=#net3}
+N 3250 -410 3350 -410 {
+lab=#net4}
+N 3250 -350 3350 -350 {
+lab=#net5}
+N 3250 -290 3340 -290 {
+lab=#net6}
+N 3250 -260 3340 -260 {
+lab=#net7}
+N 3290 150 3370 150 {
+lab=la_data_in[127:0]}
 C {devices/iopin.sym} 3240 -470 0 0 {name=p1 lab=vdda1}
 C {devices/iopin.sym} 3240 -440 0 0 {name=p2 lab=vdda2}
 C {devices/iopin.sym} 3240 -410 0 0 {name=p3 lab=vssa1}
@@ -112,3 +141,25 @@ C {devices/lab_pin.sym} 3690 -320 0 0 {name=l9 sig_type=std_logic lab=io_in[17]}
 C {devices/lab_pin.sym} 3690 -300 0 0 {name=l10 sig_type=std_logic lab=io_in[18]}
 C {devices/lab_pin.sym} 3670 -240 0 0 {name=l11 sig_type=std_logic lab=io_analog[10]}
 C {devices/lab_pin.sym} 3670 -580 0 0 {name=l12 sig_type=std_logic lab=VCCD}
+C {devices/lab_pin.sym} 3370 210 2 0 {name=l13 sig_type=std_logic lab=la_oenb[127:0]}
+C {devices/lab_pin.sym} 3370 290 2 0 {name=l14 sig_type=std_logic lab=io_in_3v3[26:0]}
+C {devices/lab_pin.sym} 3200 320 0 0 {name=l15 sig_type=std_logic lab=io_out[26:0]}
+C {devices/lab_pin.sym} 3200 350 0 0 {name=l16 sig_type=std_logic lab=io_oeb[26:0]}
+C {devices/lab_pin.sym} 3180 410 0 0 {name=l17 sig_type=std_logic lab=gpio_analog[17:0]}
+C {devices/lab_pin.sym} 3170 440 0 0 {name=l18 sig_type=std_logic lab=gpio_analog[17:0]}
+C {devices/lab_pin.sym} 3190 500 0 0 {name=l19 sig_type=std_logic lab=io_clamp_high[2:0]}
+C {devices/lab_pin.sym} 3170 530 0 0 {name=l20 sig_type=std_logic lab=io_clamp_low[2:0]}
+C {devices/lab_pin.sym} 3390 570 2 0 {name=l21 sig_type=std_logic lab=user_clock2}
+C {devices/lab_pin.sym} 3190 600 0 0 {name=l22 sig_type=std_logic lab=user_irq[2:0]}
+C {devices/lab_pin.sym} 3230 180 0 0 {name=l23 sig_type=std_logic lab=la_data_out[127:0]}
+C {devices/lab_pin.sym} 3370 150 2 0 {name=l24 sig_type=std_logic lab=la_data_in[127:0]}
+C {devices/lab_pin.sym} 3230 110 0 0 {name=l25 sig_type=std_logic lab=wbs_dat_o[31:0]}
+C {devices/lab_pin.sym} 3230 80 0 0 {name=l26 sig_type=std_logic lab=wbs_ack_o}
+C {devices/lab_pin.sym} 3350 -190 2 0 {name=l27 sig_type=std_logic lab=wb_clk_i}
+C {devices/lab_pin.sym} 3350 -160 2 0 {name=l28 sig_type=std_logic lab=wb_rst_i}
+C {devices/lab_pin.sym} 3350 -130 2 0 {name=l29 sig_type=std_logic lab=wbs_stb_i}
+C {devices/lab_pin.sym} 3350 -100 2 0 {name=l30 sig_type=std_logic lab=wbs_cyc_i}
+C {devices/lab_pin.sym} 3350 -70 2 0 {name=l31 sig_type=std_logic lab=wbs_we_i}
+C {devices/lab_pin.sym} 3350 -40 2 0 {name=l32 sig_type=std_logic lab=wbs_sel_i[3:0]}
+C {devices/lab_pin.sym} 3350 -10 2 0 {name=l33 sig_type=std_logic lab=wbs_dat_i[31:0]}
+C {devices/lab_pin.sym} 3350 20 2 0 {name=l34 sig_type=std_logic lab=wbs_adr_i[31:0]}
