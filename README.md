@@ -9,9 +9,15 @@
 
 ## Please fill in your project documentation in this README.md file 
 
+This is a lab-on-a-chip research project targeted to bring instrumentation near the magnetic new materials. It contains a VCO, a VGA, and a bandgap reference
+    
+    VCO specs
+    VGA specs
+    BGA specs
+        Nominal output Vbg = 1.1864V+/- 0.0003V
+        |TC| < 10ppm V/C
 
-:warning: | Use this sample project for analog user projects. 
-:---: | :---
+
 
 ---
 
