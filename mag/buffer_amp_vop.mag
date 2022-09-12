@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662863789
+timestamp 1662952744
 << locali >>
 rect 24600 25950 24740 25990
 rect 19760 21370 20200 21410
@@ -212,19 +212,19 @@ rect 27680 17630 27880 18100
 << metal4 >>
 rect 10225 20205 10250 20270
 use buffer_amp  X1
-timestamp 1662405622
+timestamp 1662952744
 transform 1 0 15140 0 1 17350
 box 5000 1400 9520 8676
 use buffer_amp  X2
-timestamp 1662405622
+timestamp 1662952744
 transform 1 0 19660 0 -1 19081
 box 5000 1400 9520 8676
 use buffer_amp  X3
-timestamp 1662405622
+timestamp 1662952744
 transform 1 0 15140 0 -1 19081
 box 5000 1400 9520 8676
 use buffer_amp  X4
-timestamp 1662405622
+timestamp 1662952744
 transform 1 0 19660 0 1 17350
 box 5000 1400 9520 8676
 use amp_dec  X5

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662665204
+timestamp 1662952744
 << locali >>
 rect 4525 -40 4560 105
 rect 5040 -40 5075 105
@@ -317,11 +317,11 @@ timestamp 1660420676
 transform 1 0 3851 0 1 -229
 box -551 -301 573 301
 use sky130_fd_pr__nfet_01v8_lvt_648S5X  XM1
-timestamp 1662404926
+timestamp 1662671450
 transform 0 1 4010 -1 0 -1329
 box -211 -310 211 310
 use sky130_fd_pr__nfet_01v8_lvt_648S5X  XM2
-timestamp 1662404926
+timestamp 1662671450
 transform 0 1 4800 -1 0 -1329
 box -211 -310 211 310
 use sky130_fd_pr__nfet_01v8_lvt_DJ7QE5  XM3
