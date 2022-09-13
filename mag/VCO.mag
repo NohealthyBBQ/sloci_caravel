@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1663026790
+timestamp 1663029804
 << locali >>
 rect 33895 33140 34005 33155
 rect 33895 33085 33910 33140
@@ -630,35 +630,35 @@ timestamp 1662952744
 transform 1 0 26070 0 1 10600
 box 10225 10400 29180 26030
 use cap_bank  X4
-timestamp 1663026790
+timestamp 1663029804
 transform 1 0 52305 0 -1 34725
 box 3300 -1540 5112 5514
 use cap_bank  X5
-timestamp 1663026790
+timestamp 1663029804
 transform 1 0 54405 0 -1 34725
 box 3300 -1540 5112 5514
 use cap_bank  X6
-timestamp 1663026790
+timestamp 1663029804
 transform 1 0 52305 0 1 22905
 box 3300 -1540 5112 5514
 use cap_bank  X7
-timestamp 1663026790
+timestamp 1663029804
 transform 1 0 54405 0 1 22905
 box 3300 -1540 5112 5514
 use cap_bank  X8
-timestamp 1663026790
+timestamp 1663029804
 transform 1 0 56505 0 1 22905
 box 3300 -1540 5112 5514
 use cap_bank  X9
-timestamp 1663026790
+timestamp 1663029804
 transform 1 0 58605 0 1 22905
 box 3300 -1540 5112 5514
 use cap_bank  X10
-timestamp 1663026790
+timestamp 1663029804
 transform 1 0 56505 0 -1 34725
 box 3300 -1540 5112 5514
 use cap_bank  X11
-timestamp 1663026790
+timestamp 1663029804
 transform 1 0 58605 0 -1 34725
 box 3300 -1540 5112 5514
 use bias_calc  bias_calc_0
