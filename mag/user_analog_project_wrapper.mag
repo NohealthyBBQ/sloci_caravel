@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662957247
+timestamp 1663030003
 << metal1 >>
 rect 14920 682870 15420 682910
 rect 14920 682040 14960 682870
@@ -1067,11 +1067,11 @@ rect -100 0 0 704000
 rect 584000 0 584100 704000
 rect -100 -100 584100 0
 use BGR_lvs  BGR_lvs_0
-timestamp 1662916664
+timestamp 1663029885
 transform 1 0 254230 0 1 568403
 box -14230 -10403 62405 12600
 use VCO  VCO_0
-timestamp 1662952744
+timestamp 1663026790
 transform 1 0 -7837 0 1 638742
 box 31141 20430 65400 41673
 << labels >>
