@@ -395,8 +395,8 @@ Subcircuit pins:
 Circuit 1: VCO                             |Circuit 2: VCO                             
 -------------------------------------------|-------------------------------------------
 bias_calc_0/VCTRL                          |VCTRL **Mismatch**                         
-output_buffer_0/OUTA                       |OUTA **Mismatch**                          
-output_buffer_0/OUTB                       |OUTB **Mismatch**                          
+output_buffer_0/OUTA                       |OUT0 **Mismatch**                          
+output_buffer_0/OUTB                       |OUT180 **Mismatch**                        
 VDD                                        |VDD                                        
 GND                                        |GND                                        
 bias_calc_0/BIAS2V                         |REF **Mismatch**                           
