@@ -479,8 +479,8 @@ XX2 I2A I2B BIAS GND VDD X6/IN X6/IN SUB buffer_amp
 XX3 I3A I3B BIAS GND VDD OUT270 OUT90 SUB buffer_amp
 .ends
 
-.subckt VCO bias_calc_0/BIAS2V CTRL5 CTRL4 VDD CTRL3 bias_calc_0/VCTRL output_buffer_0/OUTB
-+ CTRL2 output_buffer_0/OUTA CTRL1 GND
+.subckt VCO bias_calc_0/BIAS2V CTRL5 CTRL4 VDD CTRL3 bias_calc_0/VCTRL CTRL2 output_buffer_0/OUTB
++ output_buffer_0/OUTA CTRL1 GND
 XX4 CTRL1 CTRL2 CTRL3 CTRL4 CTRL5 X4/IN GND cap_bank
 XX6 CTRL1 CTRL2 CTRL3 CTRL4 CTRL5 X6/IN GND cap_bank
 XX5 CTRL1 CTRL2 CTRL3 CTRL4 CTRL5 X5/IN GND cap_bank
@@ -582,15 +582,15 @@ Xsky130_fd_pr__pfet_01v8_lvt_MUVY4U_0 m1_94_n180# m1_30_260# m1_30_260# m1_30_n4
 + li_818_316# sky130_fd_pr__pfet_01v8_lvt_MUVY4U
 .ends
 
-.subckt XM_current_gate_with_dummy XM_current_gate_6/m1_30_n420# XM_current_gate_8/m1_30_260#
-+ XM_current_gate_1/m1_94_n180# XM_current_gate_3/m1_94_n180# XM_current_gate_1/m1_30_260#
-+ XM_current_gate_6/m1_94_n180# XM_current_gate_7/m1_30_n420# XM_current_gate_2/m1_94_n180#
-+ XM_current_gate_5/m1_30_n420# XM_current_gate_0/m1_30_n420# XM_current_gate_2/m1_30_260#
-+ XM_current_gate_8/m1_30_n420# XM_current_gate_5/m1_94_n180# XM_current_gate_2/m1_30_n420#
-+ XM_current_gate_4/m1_94_n180# XM_current_gate_5/m1_30_260# XM_current_gate_4/m1_30_260#
-+ XM_current_gate_7/m1_30_260# XM_current_gate_3/m1_30_n420# XM_current_gate_8/li_818_316#
-+ XM_current_gate_4/m1_30_n420# XM_current_gate_1/m1_30_n420# XM_current_gate_8/m1_94_n180#
-+ XM_current_gate_0/m1_94_n180# XM_current_gate_0/m1_30_260# XM_current_gate_3/m1_30_260#
+.subckt XM_current_gate_with_dummy XM_current_gate_6/m1_30_n420# XM_current_gate_2/m1_94_n180#
++ XM_current_gate_8/m1_30_260# XM_current_gate_5/m1_94_n180# XM_current_gate_1/m1_94_n180#
++ XM_current_gate_8/m1_94_n180# XM_current_gate_3/m1_94_n180# XM_current_gate_1/m1_30_260#
++ XM_current_gate_6/m1_94_n180# XM_current_gate_7/m1_30_n420# XM_current_gate_5/m1_30_n420#
++ XM_current_gate_0/m1_30_n420# XM_current_gate_2/m1_30_260# XM_current_gate_8/m1_30_n420#
++ XM_current_gate_2/m1_30_n420# XM_current_gate_4/m1_94_n180# XM_current_gate_5/m1_30_260#
++ XM_current_gate_0/m1_94_n180# XM_current_gate_4/m1_30_260# XM_current_gate_7/m1_30_260#
++ XM_current_gate_3/m1_30_n420# XM_current_gate_8/li_818_316# XM_current_gate_4/m1_30_n420#
++ XM_current_gate_1/m1_30_n420# XM_current_gate_0/m1_30_260# XM_current_gate_3/m1_30_260#
 + XM_current_gate_6/m1_30_260# XM_current_gate_7/m1_94_n180#
 XXM_current_gate_1 XM_current_gate_1/m1_30_n420# XM_current_gate_1/m1_94_n180# XM_current_gate_8/li_818_316#
 + XM_current_gate_1/m1_30_260# XM_current_gate
@@ -1298,13 +1298,13 @@ XXM_output_mirr_combined_8 VSUBS VSUBS VSUBS VSUBS VSUBS VSUBS VSUBS VSUBS VSUBS
 + VSUBS VSUBS VSUBS XM_output_mirr_combined
 .ends
 
-.subckt BGR_lvs Vota_bias1 vbneg vb vbe3 voutb2 vgate vd4 vbg VDD Iout0 Iout1 Iout2
+.subckt BGR_lvs Vota_bias1 vbneg vb vbe3 voutb2 vgate vd4 VDD vbg Iout0 Iout1 Iout2
 + porst Iout3 Iout4 Iout5 Iout6 VSS
 XXM_Rref_0 VSS vd4 VSS XM_Rref
 XXM_pdn_0 VSS vgate porst VDD VSS VSS XM_pdn
 Xsky130_fd_pr__res_high_po_1p41_S8KB58_0 vbg vbe3 VSS sky130_fd_pr__res_high_po_1p41_S8KB58
-XXM_current_gate_with_dummy_0 VDD VDD opamp_realcomp3_usefinger_1/out VDD voutb2 VDD
-+ VDD VDD VDD VDD VDD VDD VDD VDD VDD VDD VDD VDD VDD VDD VDD vd4 VDD VDD VDD VDD
+XXM_current_gate_with_dummy_0 VDD VDD VDD VDD opamp_realcomp3_usefinger_1/out VDD
++ VDD voutb2 VDD VDD VDD VDD VDD VDD VDD VDD VDD VDD VDD VDD VDD VDD VDD vd4 VDD VDD
 + VDD VDD XM_current_gate_with_dummy
 XXM_feedbackmir_0 VDD VDD opamp_realcomp3_usefinger_0/in_n vb vgate XM_feedbackmir
 XXM_bjt_0 vbneg opamp_realcomp3_usefinger_0/in_n VSS XM_bjt
@@ -1324,58 +1324,60 @@ XXM_output_mirr_combined_with_dummy_0 Iout4 voutb2 Iout3 Iout2 Iout6 Iout1 VSS I
 + Iout0 VSS XM_output_mirr_combined_with_dummy
 .ends
 
-.subckt sloci_top VCTRL REF gpio_noesd[12] io_analog[7] OUT180 OUT0 io_analog[6] CTRL1
-+ CTRL3 CTRL4 CTRL5 CTRL2 vccd2 vssd2 GND
-XVCO_0 REF CTRL5 CTRL4 vssd2 CTRL3 VCTRL OUT180 CTRL2 OUT0 CTRL1 GND VCO
+.subckt sloci_top3 VCTRL CTRL1 CTRL2 CTRL3 CTRL4 CTRL5 OUT0 OUT180 REF io_analog[6]
++ BGR_lvs_0/Iout1 VCO_0/VDD m3_175894_702300# BGR_lvs_0/VDD BGR_lvs_0/vbg m3_165594_702300#
++ BGR_lvs_0/porst GND
+XVCO_0 REF CTRL5 CTRL4 VCO_0/VDD CTRL3 VCTRL CTRL2 OUT180 OUT0 CTRL1 GND VCO
 XBGR_lvs_0 BGR_lvs_0/Vota_bias1 BGR_lvs_0/vbneg BGR_lvs_0/vb BGR_lvs_0/vbe3 BGR_lvs_0/voutb2
-+ BGR_lvs_0/vgate BGR_lvs_0/vd4 io_analog[6] vccd2 REF io_analog[7] BGR_lvs_0/Iout2
-+ gpio_noesd[12] BGR_lvs_0/Iout3 BGR_lvs_0/Iout4 BGR_lvs_0/Iout5 BGR_lvs_0/Iout6 GND
-+ BGR_lvs
++ BGR_lvs_0/vgate BGR_lvs_0/vd4 BGR_lvs_0/VDD BGR_lvs_0/vbg REF BGR_lvs_0/Iout1 BGR_lvs_0/Iout2
++ BGR_lvs_0/porst BGR_lvs_0/Iout3 BGR_lvs_0/Iout4 BGR_lvs_0/Iout5 BGR_lvs_0/Iout6
++ GND BGR_lvs
 .ends
 
-.subckt user_analog_project_wrapper wb_clk_i wb_rst_i wbs_ack_o wbs_adr_i[0] wbs_adr_i[10]
-+ wbs_adr_i[11] wbs_adr_i[12] wbs_adr_i[13] wbs_adr_i[14] wbs_adr_i[15] wbs_adr_i[16]
-+ wbs_adr_i[17] wbs_adr_i[1] wbs_adr_i[2] wbs_adr_i[3] wbs_adr_i[4] wbs_adr_i[5] wbs_adr_i[6]
-+ wbs_adr_i[7] wbs_adr_i[8] wbs_adr_i[9] wbs_cyc_i wbs_dat_i[0] wbs_dat_i[10] wbs_dat_i[11]
-+ wbs_dat_i[12] wbs_dat_i[13] wbs_dat_i[14] wbs_dat_i[15] wbs_dat_i[16] wbs_dat_i[1]
-+ wbs_dat_i[2] wbs_dat_i[3] wbs_dat_i[4] wbs_dat_i[5] wbs_dat_i[6] wbs_dat_i[7] wbs_dat_i[8]
-+ wbs_dat_i[9] wbs_dat_o[0] wbs_dat_o[10] wbs_dat_o[11] wbs_dat_o[12] wbs_dat_o[13]
-+ wbs_dat_o[14] wbs_dat_o[15] wbs_dat_o[16] wbs_dat_o[1] wbs_dat_o[2] wbs_dat_o[3]
-+ wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6] wbs_dat_o[7] wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0]
-+ wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3] wbs_stb_i wbs_we_i wbs_dat_i[17] wbs_dat_i[18]
-+ wbs_dat_i[19] wbs_adr_i[18] wbs_dat_i[20] wbs_dat_i[21] wbs_dat_i[22] wbs_dat_i[23]
-+ wbs_dat_i[24] wbs_dat_i[25] wbs_dat_i[26] wbs_dat_i[27] wbs_dat_i[28] wbs_dat_i[29]
-+ wbs_adr_i[19] wbs_dat_i[30] wbs_dat_i[31] la_oenb[0] wbs_adr_i[20] wbs_adr_i[21]
-+ wbs_adr_i[22] wbs_adr_i[23] wbs_adr_i[24] wbs_adr_i[25] wbs_adr_i[26] wbs_adr_i[27]
-+ wbs_adr_i[28] wbs_adr_i[29] la_oenb[1] wbs_adr_i[30] wbs_adr_i[31] la_oenb[2] wbs_dat_o[17]
-+ wbs_dat_o[18] wbs_dat_o[19] la_oenb[3] wbs_dat_o[20] wbs_dat_o[21] wbs_dat_o[22]
-+ wbs_dat_o[23] wbs_dat_o[24] wbs_dat_o[25] wbs_dat_o[26] wbs_dat_o[27] wbs_dat_o[28]
-+ wbs_dat_o[29] la_oenb[4] wbs_dat_o[30] wbs_dat_o[31] la_oenb[5] la_data_in[0] la_data_in[1]
-+ la_data_in[2] la_data_in[3] la_data_in[4] la_data_in[5] la_data_out[0] la_data_out[1]
-+ la_data_out[2] la_data_out[3] la_data_out[4] la_data_out[5] la_data_in[23] la_data_in[24]
-+ la_data_in[25] la_oenb[6] la_oenb[7] la_oenb[8] la_oenb[9] la_data_in[26] la_data_in[11]
-+ la_data_in[12] la_data_in[13] la_data_in[14] la_data_in[6] la_data_in[7] la_data_in[8]
-+ la_data_in[9] la_data_in[15] la_data_out[10] la_data_out[11] la_data_out[12] la_data_out[13]
-+ la_data_out[14] la_data_out[15] la_data_out[16] la_data_out[17] la_data_out[18]
-+ la_data_out[19] la_data_in[16] la_data_out[20] la_data_out[21] la_data_out[22] la_data_out[23]
-+ la_data_out[24] la_data_out[25] la_data_in[17] la_data_in[18] la_data_in[19] la_data_in[10]
-+ la_data_out[6] la_data_out[7] la_data_out[8] la_data_out[9] la_data_in[20] la_oenb[10]
-+ la_oenb[11] la_oenb[12] la_oenb[13] la_oenb[14] la_oenb[15] la_oenb[16] la_oenb[17]
-+ la_oenb[18] la_oenb[19] la_data_in[21] la_oenb[20] la_oenb[21] la_oenb[22] la_oenb[23]
-+ la_oenb[24] la_oenb[25] la_data_in[22] la_data_in[39] la_oenb[45] la_data_in[40]
-+ la_data_out[26] la_data_out[27] la_data_out[28] la_data_out[29] la_data_in[41] la_data_out[30]
-+ la_data_out[31] la_data_out[32] la_data_out[33] la_data_out[34] la_data_out[35]
-+ la_data_out[36] la_data_out[37] la_data_out[38] la_data_out[39] la_data_in[42] la_data_out[40]
-+ la_data_out[41] la_data_out[42] la_data_out[43] la_data_out[44] la_data_out[45]
-+ la_data_out[46] la_data_in[43] la_data_in[44] la_data_in[45] la_data_in[46] la_oenb[46]
-+ la_oenb[38] la_oenb[39] la_oenb[37] la_oenb[40] la_oenb[41] la_oenb[42] la_oenb[43]
-+ la_data_in[27] la_data_in[28] la_data_in[29] la_oenb[44] la_data_in[30] la_data_in[31]
-+ la_data_in[32] la_data_in[33] la_data_in[34] la_data_in[35] la_data_in[36] la_data_in[37]
-+ la_oenb[26] la_oenb[27] la_oenb[28] la_oenb[29] la_data_in[38] la_oenb[30] la_oenb[31]
-+ la_oenb[32] la_oenb[33] la_oenb[34] la_oenb[35] la_oenb[36] la_oenb[47] la_oenb[48]
-+ la_oenb[49] la_oenb[50] la_oenb[51] la_oenb[52] la_oenb[53] la_oenb[54] la_oenb[55]
-+ la_oenb[56] la_oenb[57] la_oenb[58] la_oenb[59] la_oenb[60] la_oenb[61] la_oenb[62]
-+ la_oenb[63] la_oenb[64] la_oenb[65] la_oenb[66] la_data_in[47] la_data_in[48] la_data_in[49]
+.subckt user_analog_project_wrapper io_analog[4] io_analog[5] io_analog[6] wb_clk_i
++ wb_rst_i wbs_ack_o wbs_adr_i[0] wbs_adr_i[10] wbs_adr_i[11] wbs_adr_i[12] wbs_adr_i[13]
++ wbs_adr_i[14] wbs_adr_i[15] wbs_adr_i[16] wbs_adr_i[17] wbs_adr_i[1] wbs_adr_i[2]
++ wbs_adr_i[3] wbs_adr_i[4] wbs_adr_i[5] wbs_adr_i[6] wbs_adr_i[7] wbs_adr_i[8] wbs_adr_i[9]
++ wbs_cyc_i wbs_dat_i[0] wbs_dat_i[10] wbs_dat_i[11] wbs_dat_i[12] wbs_dat_i[13] wbs_dat_i[14]
++ wbs_dat_i[15] wbs_dat_i[16] wbs_dat_i[1] wbs_dat_i[2] wbs_dat_i[3] wbs_dat_i[4]
++ wbs_dat_i[5] wbs_dat_i[6] wbs_dat_i[7] wbs_dat_i[8] wbs_dat_i[9] wbs_dat_o[0] wbs_dat_o[10]
++ wbs_dat_o[11] wbs_dat_o[12] wbs_dat_o[13] wbs_dat_o[14] wbs_dat_o[15] wbs_dat_o[16]
++ wbs_dat_o[1] wbs_dat_o[2] wbs_dat_o[3] wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6] wbs_dat_o[7]
++ wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3] wbs_stb_i
++ wbs_we_i wbs_dat_i[17] wbs_dat_i[18] wbs_dat_i[19] wbs_adr_i[18] wbs_dat_i[20] wbs_dat_i[21]
++ wbs_dat_i[22] wbs_dat_i[23] wbs_dat_i[24] wbs_dat_i[25] wbs_dat_i[26] wbs_dat_i[27]
++ wbs_dat_i[28] wbs_dat_i[29] wbs_adr_i[19] wbs_dat_i[30] wbs_dat_i[31] la_oenb[0]
++ wbs_adr_i[20] wbs_adr_i[21] wbs_adr_i[22] wbs_adr_i[23] wbs_adr_i[24] wbs_adr_i[25]
++ wbs_adr_i[26] wbs_adr_i[27] wbs_adr_i[28] wbs_adr_i[29] la_oenb[1] wbs_adr_i[30]
++ wbs_adr_i[31] la_oenb[2] wbs_dat_o[17] wbs_dat_o[18] wbs_dat_o[19] la_oenb[3] wbs_dat_o[20]
++ wbs_dat_o[21] wbs_dat_o[22] wbs_dat_o[23] wbs_dat_o[24] wbs_dat_o[25] wbs_dat_o[26]
++ wbs_dat_o[27] wbs_dat_o[28] wbs_dat_o[29] la_oenb[4] wbs_dat_o[30] wbs_dat_o[31]
++ la_oenb[5] la_data_in[0] la_data_in[1] la_data_in[2] la_data_in[3] la_data_in[4]
++ la_data_in[5] la_data_out[0] la_data_out[1] la_data_out[2] la_data_out[3] la_data_out[4]
++ la_data_out[5] la_data_in[23] la_data_in[24] la_data_in[25] la_oenb[6] la_oenb[7]
++ la_oenb[8] la_oenb[9] la_data_in[26] la_data_in[11] la_data_in[12] la_data_in[13]
++ la_data_in[14] la_data_in[6] la_data_in[7] la_data_in[8] la_data_in[9] la_data_in[15]
++ la_data_out[10] la_data_out[11] la_data_out[12] la_data_out[13] la_data_out[14]
++ la_data_out[15] la_data_out[16] la_data_out[17] la_data_out[18] la_data_out[19]
++ la_data_in[16] la_data_out[20] la_data_out[21] la_data_out[22] la_data_out[23] la_data_out[24]
++ la_data_out[25] la_data_in[17] la_data_in[18] la_data_in[19] la_data_in[10] la_data_out[6]
++ la_data_out[7] la_data_out[8] la_data_out[9] la_data_in[20] la_oenb[10] la_oenb[11]
++ la_oenb[12] la_oenb[13] la_oenb[14] la_oenb[15] la_oenb[16] la_oenb[17] la_oenb[18]
++ la_oenb[19] la_data_in[21] la_oenb[20] la_oenb[21] la_oenb[22] la_oenb[23] la_oenb[24]
++ la_oenb[25] la_data_in[22] la_data_in[39] la_oenb[45] la_data_in[40] la_data_out[26]
++ la_data_out[27] la_data_out[28] la_data_out[29] la_data_in[41] la_data_out[30] la_data_out[31]
++ la_data_out[32] la_data_out[33] la_data_out[34] la_data_out[35] la_data_out[36]
++ la_data_out[37] la_data_out[38] la_data_out[39] la_data_in[42] la_data_out[40] la_data_out[41]
++ la_data_out[42] la_data_out[43] la_data_out[44] la_data_out[45] la_data_out[46]
++ la_data_in[43] la_data_in[44] la_data_in[45] la_data_in[46] la_oenb[46] la_oenb[38]
++ la_oenb[39] la_oenb[37] la_oenb[40] la_oenb[41] la_oenb[42] la_oenb[43] la_data_in[27]
++ la_data_in[28] la_data_in[29] la_oenb[44] la_data_in[30] la_data_in[31] la_data_in[32]
++ la_data_in[33] la_data_in[34] la_data_in[35] la_data_in[36] la_data_in[37] la_oenb[26]
++ la_oenb[27] la_oenb[28] la_oenb[29] la_data_in[38] la_oenb[30] la_oenb[31] la_oenb[32]
++ la_oenb[33] la_oenb[34] la_oenb[35] la_oenb[36] la_oenb[47] la_oenb[48] la_oenb[49]
++ la_oenb[50] la_oenb[51] la_oenb[52] la_oenb[53] la_oenb[54] la_oenb[55] la_oenb[56]
++ la_oenb[57] la_oenb[58] la_oenb[59] la_oenb[60] la_oenb[61] la_oenb[62] la_oenb[63]
++ la_oenb[64] la_oenb[65] la_oenb[66] la_data_in[47] la_data_in[48] la_data_in[49]
 + la_data_in[50] la_data_in[51] la_data_in[52] la_data_in[53] la_data_in[54] la_data_in[55]
 + la_data_in[56] la_data_in[57] la_data_in[58] la_data_in[59] la_data_in[60] la_data_in[61]
 + la_data_in[62] la_data_in[63] la_data_out[47] la_data_out[48] la_data_out[49] la_data_in[64]
@@ -1414,32 +1416,32 @@ XBGR_lvs_0 BGR_lvs_0/Vota_bias1 BGR_lvs_0/vbneg BGR_lvs_0/vb BGR_lvs_0/vbe3 BGR_
 + la_data_in[113] user_irq[1] la_data_in[114] user_irq[2] la_data_out[111] la_data_out[112]
 + la_data_out[109] la_data_in[109] la_data_out[113] la_data_in[110] la_data_out[114]
 + la_oenb[108] la_data_out[115] la_data_out[116] la_data_in[111] la_data_out[117]
-+ la_data_in[115] la_data_out[118] la_data_out[119] io_analog[4] io_analog[5] io_analog[6]
-+ gpio_analog[2] gpio_analog[3] gpio_analog[4] gpio_analog[5] gpio_analog[6] gpio_noesd[2]
-+ gpio_noesd[3] gpio_noesd[4] gpio_noesd[5] gpio_noesd[6] io_analog[0] io_analog[1]
-+ io_analog[2] io_analog[3] io_clamp_high[0] io_clamp_low[0] io_in[10] io_in[11] io_in[12]
-+ io_in[13] io_in[9] io_in_3v3[10] io_in_3v3[11] io_in_3v3[12] io_in_3v3[13] io_in_3v3[9]
-+ io_oeb[10] io_oeb[11] io_oeb[12] io_oeb[13] io_oeb[9] io_out[10] io_out[11] io_out[12]
-+ io_out[13] io_out[9] vccd1 vdda1 vssa1 io_in[16] io_in[17] gpio_analog[9] gpio_noesd[10]
-+ io_analog[7] io_in_3v3[14] io_in_3v3[15] io_in_3v3[16] io_in_3v3[17] io_analog[8]
-+ io_analog[9] gpio_noesd[7] io_oeb[14] io_oeb[15] io_oeb[16] io_oeb[17] gpio_noesd[8]
-+ io_clamp_high[1] gpio_noesd[9] io_clamp_low[1] io_out[14] io_out[15] io_out[16]
-+ io_out[17] io_clamp_low[2] gpio_analog[10] io_analog[10] gpio_analog[7] gpio_analog[8]
-+ io_in[14] io_in[15] io_in_3v3[24] io_in_3v3[25] io_in_3v3[26] gpio_analog[16] gpio_analog[17]
-+ gpio_analog[11] gpio_noesd[12] gpio_noesd[11] io_in[18] io_in[19] io_in[20] io_in[21]
-+ io_oeb[18] io_oeb[19] io_oeb[20] io_oeb[21] io_oeb[22] io_oeb[23] io_oeb[24] io_oeb[25]
-+ io_oeb[26] io_in[22] io_in[23] io_in[24] io_in[25] io_in[26] gpio_noesd[13] gpio_noesd[14]
-+ gpio_noesd[15] io_out[18] io_out[19] io_out[20] io_out[21] io_out[22] io_out[23]
-+ io_out[24] io_out[25] io_out[26] gpio_noesd[16] gpio_noesd[17] gpio_analog[13] gpio_analog[14]
-+ gpio_analog[15] io_in_3v3[18] io_in_3v3[19] vdda2 io_in_3v3[20] io_in_3v3[21] io_in_3v3[22]
-+ io_in_3v3[23] vssd2 io_in_3v3[6] io_in_3v3[7] io_in_3v3[8] io_in[1] io_oeb[0] gpio_noesd[0]
-+ io_in[2] io_in[3] io_in[4] io_in[5] io_out[1] io_in[6] io_in_3v3[1] io_in[7] io_in[8]
-+ gpio_analog[0] io_oeb[1] io_in_3v3[0] io_out[2] io_out[3] io_out[4] io_out[5] io_out[6]
-+ io_out[7] io_out[8] gpio_analog[1] gpio_noesd[1] io_in[0] io_in_3v3[2] io_in_3v3[3]
-+ io_in_3v3[4] io_oeb[2] io_oeb[3] io_oeb[4] io_oeb[5] io_oeb[6] io_oeb[7] io_oeb[8]
-+ vssd1 io_in_3v3[5] io_out[0]
-Xsloci_top_0 io_analog[10] sloci_top_0/REF gpio_noesd[12] io_analog[7] io_analog[8]
-+ io_analog[9] io_analog[6] io_in[14] io_in[16] io_in[17] io_in[18] io_in_3v3[15]
-+ vccd1 vssd2 vssa1 sloci_top
++ la_data_in[115] la_data_out[118] la_data_out[119] gpio_analog[2] gpio_analog[3]
++ gpio_analog[4] gpio_analog[5] gpio_analog[6] gpio_noesd[2] gpio_noesd[3] gpio_noesd[4]
++ gpio_noesd[5] gpio_noesd[6] io_analog[0] io_analog[1] io_analog[2] io_analog[3]
++ io_clamp_high[0] io_clamp_low[0] io_in[10] io_in[11] io_in[12] io_in[13] io_in[9]
++ io_in_3v3[10] io_in_3v3[11] io_in_3v3[12] io_in_3v3[13] io_in_3v3[9] io_oeb[10]
++ io_oeb[11] io_oeb[12] io_oeb[13] io_oeb[9] io_out[10] io_out[11] io_out[12] io_out[13]
++ io_out[9] vccd1 vdda1 vssa1 io_in[16] io_in[17] gpio_analog[9] gpio_noesd[10] io_analog[7]
++ io_in_3v3[14] io_in_3v3[15] io_in_3v3[16] io_in_3v3[17] io_analog[8] io_analog[9]
++ gpio_noesd[7] io_oeb[14] io_oeb[15] io_oeb[16] io_oeb[17] gpio_noesd[8] io_clamp_high[1]
++ io_clamp_high[2] gpio_noesd[9] io_clamp_low[1] io_out[14] io_out[15] io_out[16]
++ io_out[17] io_clamp_low[2] gpio_analog[10] io_analog[10] vccd2 gpio_analog[7] gpio_analog[8]
++ io_in[14] io_in[15] vssa2 io_in_3v3[24] io_in_3v3[25] io_in_3v3[26] gpio_analog[16]
++ gpio_analog[17] gpio_analog[11] gpio_analog[12] gpio_noesd[11] io_in[18] io_in[19]
++ io_in[20] io_in[21] io_oeb[18] io_oeb[19] io_oeb[20] io_oeb[21] io_oeb[22] io_oeb[23]
++ io_oeb[24] io_oeb[25] io_oeb[26] io_in[22] io_in[23] io_in[24] io_in[25] io_in[26]
++ gpio_noesd[12] gpio_noesd[13] gpio_noesd[14] gpio_noesd[15] io_out[18] io_out[19]
++ io_out[20] io_out[21] io_out[22] io_out[23] io_out[24] io_out[25] io_out[26] gpio_noesd[16]
++ gpio_noesd[17] gpio_analog[13] gpio_analog[14] gpio_analog[15] io_in_3v3[18] io_in_3v3[19]
++ vdda2 io_in_3v3[20] io_in_3v3[21] io_in_3v3[22] io_in_3v3[23] vssd2 io_in_3v3[6]
++ io_in_3v3[7] io_in_3v3[8] io_in[1] io_oeb[0] gpio_noesd[0] io_in[2] io_in[3] io_in[4]
++ io_in[5] io_out[1] io_in[6] io_in_3v3[1] io_in[7] io_in[8] gpio_analog[0] io_oeb[1]
++ io_in_3v3[0] io_out[2] io_out[3] io_out[4] io_out[5] io_out[6] io_out[7] io_out[8]
++ gpio_analog[1] gpio_noesd[1] io_in[0] io_in_3v3[2] io_in_3v3[3] io_in_3v3[4] io_oeb[2]
++ io_oeb[3] io_oeb[4] io_oeb[5] io_oeb[6] io_oeb[7] io_oeb[8] vssd1 io_in_3v3[5] io_out[0]
+Xsloci_top3_0 io_analog[10] io_in[14] io_in_3v3[15] io_in[16] io_in[17] io_in[18]
++ io_analog[9] io_analog[8] sloci_top3_0/REF io_analog[6] io_analog[7] vssd2 io_analog[6]
++ vccd2 io_analog[6] io_analog[6] gpio_analog[12] vssa2 sloci_top3
 .ends
 
