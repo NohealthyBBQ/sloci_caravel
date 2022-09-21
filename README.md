@@ -9,13 +9,21 @@
 
 ## Please fill in your project documentation in this README.md file 
 
-This is a lab-on-a-chip research project targeted to bring instrumentation near the magnetic new materials. It contains a VCO, a VGA, and a bandgap reference
+This is a lab-on-a-chip research project targeted to bring instrumentation near the magnetic new materials. It contains a voltage controlled oscillator(VCO), a bandgap reference(BGR), and a variable gain amplifier (VGA).  
     
     VCO specs
-    VGA specs
+        Frequency range: 1.71 ~ 9.73GHz
+        Amplitude: 0.2 ~ 0.5V differential
+        2nd harmonic < -60dB
+        3rd harmonic < 60dB
+        settling time < 6ns
+        Startup time < 48 ns
     BGA specs
-        Nominal output Vbg = 1.1864V+/- 0.0003V
-        |TC| < 10ppm V/C
+        Output Vbg = 1.1974V+/-0.6mV (0.05% error) from -20 ~ 100C
+            TC =  -5+/-45ppm V/C
+        Output current reference = 39.95uA+/-0.11uA (0.27% error) from -20 ~ 100C
+            TC = -0.001+/-0.007ppm A/C
+        
 
 
 
