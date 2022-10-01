@@ -25,15 +25,15 @@ lab=io_analog[9]}
 N 3630 -460 3730 -460 {
 lab=REF}
 N 3690 -380 3730 -380 {
-lab=io_in[14]}
-N 3690 -360 3730 -360 {
 lab=io_in[15]}
-N 3690 -340 3730 -340 {
+N 3690 -360 3730 -360 {
 lab=io_in[16]}
-N 3690 -320 3730 -320 {
+N 3690 -340 3730 -340 {
 lab=io_in[17]}
-N 3690 -300 3730 -300 {
+N 3690 -320 3730 -320 {
 lab=io_in[18]}
+N 3690 -300 3730 -300 {
+lab=io_in[19]}
 N 3670 -240 3730 -240 {
 lab=io_analog[10]}
 N 3280 -190 3350 -190 {
@@ -103,9 +103,39 @@ lab=vccd2}
 N 4980 -370 5030 -370 {
 lab=io_analog[7]}
 N 4720 -250 4780 -250 {
-lab=gpio_analog[12]}
+lab=gpio_analog[7]}
 N 4920 -400 4980 -400 {
 lab=io_analog[6]}
+N 3750 80 3850 80 {
+lab=REF2}
+N 3810 160 3850 160 {
+lab=io_in[15]}
+N 3810 180 3850 180 {
+lab=io_in[16]}
+N 3810 200 3850 200 {
+lab=io_in[17]}
+N 3810 220 3850 220 {
+lab=io_in[18]}
+N 3810 240 3850 240 {
+lab=io_in[19]}
+N 3790 300 3850 300 {
+lab=io_analog[10]}
+N 4020 440 4110 440 {
+lab=vssa2}
+N 4020 -40 4090 -40 {
+lab=vdda2}
+N 4390 160 4520 160 {
+lab=txina}
+N 4390 220 4520 220 {
+lab=txinb}
+N 4520 180 4520 220 {
+lab=txinb}
+N 4670 160 4720 160 {
+lab=#net9}
+N 4670 180 4720 180 {
+lab=#net10}
+N 4920 -330 4980 -330 {
+lab=REF2}
 C {devices/iopin.sym} 3240 -470 0 0 {name=p1 lab=vdda1}
 C {devices/iopin.sym} 3240 -440 0 0 {name=p2 lab=vdda2}
 C {devices/iopin.sym} 3240 -410 0 0 {name=p3 lab=vssa1}
@@ -144,11 +174,11 @@ C {devices/lab_pin.sym} 3530 470 2 0 {name=l2 sig_type=std_logic lab=io_analog[1
 C {devices/lab_pin.sym} 4340 -380 2 0 {name=l3 sig_type=std_logic lab=io_analog[9]}
 C {devices/lab_pin.sym} 4340 -320 2 0 {name=l4 sig_type=std_logic lab=io_analog[8]}
 C {devices/lab_pin.sym} 3660 -460 0 0 {name=l5 sig_type=std_logic lab=REF}
-C {devices/lab_pin.sym} 3690 -380 0 0 {name=l6 sig_type=std_logic lab=io_in[14]}
-C {devices/lab_pin.sym} 3690 -360 0 0 {name=l7 sig_type=std_logic lab=io_in[15]}
-C {devices/lab_pin.sym} 3690 -340 0 0 {name=l8 sig_type=std_logic lab=io_in[16]}
-C {devices/lab_pin.sym} 3690 -320 0 0 {name=l9 sig_type=std_logic lab=io_in[17]}
-C {devices/lab_pin.sym} 3690 -300 0 0 {name=l10 sig_type=std_logic lab=io_in[18]}
+C {devices/lab_pin.sym} 3690 -380 0 0 {name=l6 sig_type=std_logic lab=io_in[15]}
+C {devices/lab_pin.sym} 3690 -360 0 0 {name=l7 sig_type=std_logic lab=io_in[16]}
+C {devices/lab_pin.sym} 3690 -340 0 0 {name=l8 sig_type=std_logic lab=io_in[17]}
+C {devices/lab_pin.sym} 3690 -320 0 0 {name=l9 sig_type=std_logic lab=io_in[18]}
+C {devices/lab_pin.sym} 3690 -300 0 0 {name=l10 sig_type=std_logic lab=io_in[19]}
 C {devices/lab_pin.sym} 3670 -240 0 0 {name=l11 sig_type=std_logic lab=io_analog[10]}
 C {devices/lab_pin.sym} 3670 -580 0 0 {name=l12 sig_type=std_logic lab=vdda2}
 C {devices/lab_pin.sym} 3370 210 2 0 {name=l13 sig_type=std_logic lab=la_oenb[127:0]}
@@ -178,5 +208,22 @@ C {lab_wire.sym} 4830 -110 0 0 {name=l35 sig_type=std_logic lab=vssa2}
 C {lab_wire.sym} 4980 -380 0 1 {name=l36 sig_type=std_logic lab=REF}
 C {lab_wire.sym} 5030 -370 0 1 {name=l37 sig_type=std_logic lab=io_analog[7]}
 C {lab_wire.sym} 4980 -400 0 1 {name=l38 sig_type=std_logic lab=io_analog[6]}
-C {lab_wire.sym} 4720 -250 0 0 {name=l39 sig_type=std_logic lab=gpio_analog[12]}
+C {lab_wire.sym} 4720 -250 0 0 {name=l39 sig_type=std_logic lab=gpio_analog[7]}
 C {lab_wire.sym} 4830 -490 0 0 {name=l40 sig_type=std_logic lab=vccd2}
+C {VCO.sym} 2270 680 0 0 {name=X3}
+C {devices/lab_pin.sym} 3780 80 0 0 {name=l41 sig_type=std_logic lab=REF2}
+C {devices/lab_pin.sym} 3810 160 0 0 {name=l42 sig_type=std_logic lab=io_in[15]}
+C {devices/lab_pin.sym} 3810 180 0 0 {name=l43 sig_type=std_logic lab=io_in[16]}
+C {devices/lab_pin.sym} 3810 200 0 0 {name=l44 sig_type=std_logic lab=io_in[17]}
+C {devices/lab_pin.sym} 3810 220 0 0 {name=l45 sig_type=std_logic lab=io_in[18]}
+C {devices/lab_pin.sym} 3810 240 0 0 {name=l46 sig_type=std_logic lab=io_in[19]}
+C {devices/lab_pin.sym} 3790 300 0 0 {name=l47 sig_type=std_logic lab=io_analog[10]}
+C {devices/lab_pin.sym} 4020 -40 0 0 {name=l48 sig_type=std_logic lab=vdda2
+}
+C {devices/lab_pin.sym} 4020 440 0 0 {name=l49 sig_type=std_logic lab=vssa2}
+C {/foss/designs/sloci_caravel_vco_fix/xschem/Tx_line.sym} 4470 260 0 0 {name=X4}
+C {devices/lab_pin.sym} 4490 160 0 0 {name=l50 sig_type=std_logic lab=txina
+}
+C {devices/lab_pin.sym} 4490 220 0 0 {name=l51 sig_type=std_logic lab=txinb
+}
+C {lab_wire.sym} 4980 -330 0 1 {name=l52 sig_type=std_logic lab=REF2}
