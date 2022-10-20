@@ -1,7 +1,12 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1665771957
+timestamp 1666262531
+<< error_s >>
+rect -2243 -2874 -2230 -2626
+rect -1995 -3088 -1982 -2874
+rect -4470 -3810 7062 -3806
+rect -4470 -5140 7062 -5048
 << nwell >>
 rect -8726 10225 -8100 11452
 << locali >>
@@ -760,11 +765,11 @@ timestamp 1665771957
 transform 0 1 -13057 -1 0 -5305
 box -1417 -1173 5029 21223
 use XM_bjt  XM_bjt_0
-timestamp 1665771707
+timestamp 1666262531
 transform 1 0 -1950 0 1 -2620
 box 0 0 6492 9068
 use XM_bjt_out  XM_bjt_out_0
-timestamp 1665771707
+timestamp 1666262531
 transform 1 0 -2070 0 1 6780
 box 0 0 6492 3916
 use XM_current_gate_with_dummy  XM_current_gate_with_dummy_0
@@ -820,36 +825,36 @@ timestamp 1662758895
 transform 0 1 -3253 -1 0 11177
 box -307 -4837 307 4837
 << labels >>
-flabel metal2 -9540 5700 -9480 7680 0 FreeSans 800 0 0 0 vb
-flabel metal3 -8760 8740 -8200 8840 0 FreeSans 800 0 0 0 vgate
-flabel metal2 1160 8800 1380 11100 0 FreeSans 800 0 0 0 vbe3
-flabel metal1 -9200 -2991 -9100 5271 0 FreeSans 800 0 0 0 Vota_bias1
-flabel space -11280 2300 1400 2500 0 FreeSans 1600 0 0 0 va
-flabel metal3 6920 -3800 7040 -1540 0 FreeSans 1600 0 0 0 vd4
-flabel metal2 6420 320 6600 4600 0 FreeSans 3200 0 0 0 voutb2
-flabel space -3765 8753 -3645 10339 0 FreeSans 1600 0 0 0 porst_buff
-flabel space 27267 -1013 29033 -859 0 FreeSans 3200 0 0 0 voutb1
-flabel metal1 -8700 8200 -4700 8400 0 FreeSans 3200 0 0 0 vbneg
-flabel metal3 30200 4260 30500 12600 0 FreeSans 3200 0 0 0 Iout0
+rlabel metal2 -9540 5700 -9480 7680 0 vb
+rlabel metal3 -8760 8740 -8200 8840 0 vgate
+rlabel metal2 1160 8800 1380 11100 0 vbe3
+rlabel metal1 -9200 -2991 -9100 5271 0 Vota_bias1
+rlabel space -11280 2300 1400 2500 0 va
+rlabel metal3 6920 -3800 7040 -1540 0 vd4
+rlabel metal2 6420 320 6600 4600 0 voutb2
+rlabel space -3765 8753 -3645 10339 0 porst_buff
+rlabel space 27267 -1013 29033 -859 0 voutb1
+rlabel metal1 -8700 8200 -4700 8400 0 vbneg
+rlabel metal3 30200 4260 30500 12600 0 Iout0
 port 1 nsew
-flabel metal4 -14220 9760 -14020 12000 0 FreeSans 3200 0 0 0 VDD
+rlabel metal4 -14220 9760 -14020 12000 0 VDD
 port 2 nsew
-flabel metal4 -14220 -9200 -14020 -3780 0 FreeSans 3200 0 0 0 VSS
+rlabel metal4 -14220 -9200 -14020 -3780 0 VSS
 port 3 nsew
-flabel metal3 32400 4260 32700 12600 0 FreeSans 3200 0 0 0 Iout1
+rlabel metal3 32400 4260 32700 12600 0 Iout1
 port 4 nsew
-flabel metal3 34600 4260 34900 12600 0 FreeSans 3200 0 0 0 Iout2
+rlabel metal3 34600 4260 34900 12600 0 Iout2
 port 5 nsew
-flabel metal3 -8500 10860 -8380 12540 0 FreeSans 3200 0 0 0 porst
+rlabel metal3 -8500 10860 -8380 12540 0 porst
 port 6 nsew
-flabel metal2 -7900 11120 -7700 12500 0 FreeSans 1600 0 0 0 vbg
+rlabel metal2 -7900 11120 -7700 12500 0 vbg
 port 7 nsew
-flabel metal3 36800 4260 37100 12600 0 FreeSans 3200 0 0 0 Iout3
+rlabel metal3 36800 4260 37100 12600 0 Iout3
 port 8 nsew
-flabel metal3 39000 4260 39300 12600 0 FreeSans 3200 0 0 0 Iout4
+rlabel metal3 39000 4260 39300 12600 0 Iout4
 port 9 nsew
-flabel metal3 41200 4260 41500 12600 0 FreeSans 3200 0 0 0 Iout5
+rlabel metal3 41200 4260 41500 12600 0 Iout5
 port 10 nsew
-flabel metal3 43400 4260 43700 12600 0 FreeSans 3200 0 0 0 Iout6
+rlabel metal3 43400 4260 43700 12600 0 Iout6
 port 11 nsew
 << end >>

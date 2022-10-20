@@ -137,7 +137,79 @@ lab=#net10}
 N 4920 -360 4980 -360 {
 lab=io_analog[7]}
 N 4920 -350 4980 -350 {
-lab=#net11}
+lab=REF3}
+N 4720 160 4820 160 {
+lab=#net9}
+N 4720 180 4820 180 {
+lab=#net10}
+N 5340 170 5400 170 {
+lab=io_analog[2]}
+N 5340 150 5400 150 {
+lab=io_analog[3]}
+N 5270 100 5270 120 {
+lab=vccd1}
+N 5280 100 5280 120 {
+lab=REF3}
+N 5290 100 5290 120 {
+lab=io_analog[6]}
+N 5270 200 5270 220 {
+lab=vssa1}
+N 5280 200 5280 220 {
+lab=io_analog[0]}
+N 5290 200 5290 220 {
+lab=io_analog[1]}
+N 5210 150 5250 150 {
+lab=io_analog[4]}
+N 5210 160 5250 160 {
+lab=io_in[13]}
+N 5210 170 5250 170 {
+lab=io_analog[5]}
+N 4780 170 4820 170 {
+lab=io_in[13]}
+N 5280 80 5280 100 {
+lab=REF3}
+N 5290 50 5290 100 {
+lab=io_analog[6]}
+N 5280 220 5280 250 {
+lab=io_analog[0]}
+N 5290 220 5290 290 {
+lab=io_analog[1]}
+N 5210 140 5210 150 {
+lab=io_analog[4]}
+N 5200 140 5210 140 {
+lab=io_analog[4]}
+N 5210 170 5210 180 {
+lab=io_analog[5]}
+N 5200 180 5210 180 {
+lab=io_analog[5]}
+N 4920 -340 4980 -340 {
+lab=REF4}
+N 4980 -340 4980 -330 {
+lab=REF4}
+N 4840 110 4840 130 {
+lab=vccd1}
+N 4850 110 4850 130 {
+lab=REF3}
+N 4860 110 4860 130 {
+lab=io_analog[6]}
+N 4850 90 4850 110 {
+lab=REF3}
+N 4860 60 4860 110 {
+lab=io_analog[6]}
+N 4840 210 4840 230 {
+lab=vssa1}
+N 4850 210 4850 230 {
+lab=io_analog[0]}
+N 4860 210 4860 230 {
+lab=io_analog[1]}
+N 4850 230 4850 260 {
+lab=io_analog[0]}
+N 4860 230 4860 300 {
+lab=io_analog[1]}
+N 4910 180 4970 180 {
+lab=io_analog[2]}
+N 4910 160 4970 160 {
+lab=io_analog[3]}
 C {devices/iopin.sym} 3240 -470 0 0 {name=p1 lab=vdda1}
 C {devices/iopin.sym} 3240 -440 0 0 {name=p2 lab=vdda2}
 C {devices/iopin.sym} 3240 -410 0 0 {name=p3 lab=vssa1}
@@ -229,6 +301,30 @@ C {devices/lab_pin.sym} 4490 160 0 0 {name=l50 sig_type=std_logic lab=txina
 C {devices/lab_pin.sym} 4490 220 0 0 {name=l51 sig_type=std_logic lab=txinb
 }
 C {lab_wire.sym} 4980 -360 0 1 {name=l53 sig_type=std_logic lab=io_analog[7]}
-C {noconn.sym} 4920 -340 2 0 {name=l52}
 C {noconn.sym} 4920 -330 2 0 {name=l54}
 C {noconn.sym} 4920 -320 2 0 {name=l55}
+C {/foss/designs/sloci_caravel/xschem/topLevel.sym} 4800 200 0 0 {name=x1}
+C {/foss/designs/sloci_caravel/xschem/topLevel.sym} 5230 190 0 0 {name=x2}
+C {devices/lab_pin.sym} 5270 210 0 0 {name=l56 sig_type=std_logic lab=vssa1}
+C {devices/lab_pin.sym} 5270 110 0 0 {name=l57 sig_type=std_logic lab=vccd1}
+C {devices/lab_pin.sym} 4780 170 0 0 {name=l58 sig_type=std_logic lab=io_in[13]}
+C {devices/lab_pin.sym} 5210 160 0 0 {name=l59 sig_type=std_logic lab=io_in[13]}
+C {devices/lab_pin.sym} 5200 140 0 0 {name=l60 sig_type=std_logic lab=io_analog[4]}
+C {devices/lab_pin.sym} 5200 180 0 0 {name=l61 sig_type=std_logic lab=io_analog[5]}
+C {lab_wire.sym} 4980 -380 0 1 {name=l52 sig_type=std_logic lab=REF2}
+C {devices/lab_pin.sym} 4980 -350 2 0 {name=l62 sig_type=std_logic lab=REF3}
+C {devices/lab_pin.sym} 4980 -330 2 0 {name=l63 sig_type=std_logic lab=REF4}
+C {devices/lab_pin.sym} 5280 90 0 0 {name=l64 sig_type=std_logic lab=REF3}
+C {devices/lab_pin.sym} 5290 60 0 0 {name=l65 sig_type=std_logic lab=io_analog[6]}
+C {devices/lab_pin.sym} 5280 230 0 0 {name=l66 sig_type=std_logic lab=io_analog[0]}
+C {devices/lab_pin.sym} 5290 270 0 0 {name=l67 sig_type=std_logic lab=io_analog[1]}
+C {devices/lab_pin.sym} 5400 150 2 0 {name=l68 sig_type=std_logic lab=io_analog[3]}
+C {devices/lab_pin.sym} 5400 170 2 0 {name=l69 sig_type=std_logic lab=io_analog[2]}
+C {devices/lab_pin.sym} 4840 120 0 0 {name=l70 sig_type=std_logic lab=vccd1}
+C {devices/lab_pin.sym} 4850 100 0 0 {name=l71 sig_type=std_logic lab=REF4}
+C {devices/lab_pin.sym} 4860 70 0 0 {name=l72 sig_type=std_logic lab=io_analog[6]}
+C {devices/lab_pin.sym} 4840 220 0 0 {name=l73 sig_type=std_logic lab=vssa1}
+C {devices/lab_pin.sym} 4850 240 0 0 {name=l74 sig_type=std_logic lab=io_analog[0]}
+C {devices/lab_pin.sym} 4860 280 0 0 {name=l75 sig_type=std_logic lab=io_analog[1]}
+C {devices/lab_pin.sym} 4970 160 2 0 {name=l76 sig_type=std_logic lab=io_analog[3]}
+C {devices/lab_pin.sym} 4970 180 2 0 {name=l77 sig_type=std_logic lab=io_analog[2]}
