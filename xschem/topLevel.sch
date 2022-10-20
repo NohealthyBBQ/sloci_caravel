@@ -3919,24 +3919,10 @@ C {lab_pin.sym} -3050 2020 0 0 {name=l235 sig_type=std_logic lab=vss
 }
 C {lab_pin.sym} -3060 2250 0 0 {name=l236 sig_type=std_logic lab=vss
 }
-C {iopin.sym} -2860 -410 0 0 {name=p1 lab=vdd
-}
-C {iopin.sym} -2860 -370 0 0 {name=p2 lab=vss
-}
-C {iopin.sym} -2850 -320 0 0 {name=p3 lab=Iref
-}
-C {iopin.sym} -2850 -280 0 0 {name=p4 lab=vref}
-C {iopin.sym} -2850 -240 0 0 {name=p5 lab=vc}
-C {iopin.sym} -2850 -210 0 0 {name=p6 lab=vout5p}
-C {iopin.sym} -2850 -180 0 0 {name=p7 lab=vout5n}
-C {iopin.sym} -2850 -150 0 0 {name=p8 lab=vinp}
-C {iopin.sym} -2850 -120 0 0 {name=p9 lab=vinn}
 C {lab_pin.sym} 2550 1210 0 0 {name=l126 sig_type=std_logic lab=vin0p
 }
 C {lab_pin.sym} 2780 1210 0 0 {name=l237 sig_type=std_logic lab=vin0n
 }
-C {iopin.sym} -2850 -70 0 0 {name=p10 lab=vin0p}
-C {iopin.sym} -2850 -40 0 0 {name=p11 lab=vin0n}
 C {lab_pin.sym} 1570 1270 0 0 {name=l239 sig_type=std_logic lab=Iref}
 C {lab_pin.sym} 1680 200 0 0 {name=l240 sig_type=std_logic lab=Iref}
 C {lab_pin.sym} -1370 -1600 0 0 {name=l241 sig_type=std_logic lab=Iref}
@@ -4064,3 +4050,14 @@ spiceprefix=X
 mult=1}
 C {lab_pin.sym} 1570 30 0 0 {name=l106 sig_type=std_logic lab=vss
 }
+C {ipin.sym} -2680 -370 0 0 {name=p1 lab=vss}
+C {ipin.sym} -2680 -320 0 0 {name=p12 lab=Iref}
+C {ipin.sym} -2680 -280 0 0 {name=p13 lab=vref}
+C {ipin.sym} -2680 -240 0 0 {name=p14 lab=vc}
+C {ipin.sym} -2680 -150 0 0 {name=p15 lab=vinp}
+C {ipin.sym} -2680 -120 0 0 {name=p16 lab=vinn}
+C {ipin.sym} -2680 -70 0 0 {name=p17 lab=vin0p}
+C {ipin.sym} -2680 -40 0 0 {name=p18 lab=vin0n}
+C {opin.sym} -2690 -210 0 0 {name=p19 lab=vout5p}
+C {opin.sym} -2690 -180 0 0 {name=p20 lab=vout5n}
+C {ipin.sym} -2680 -350 0 0 {name=p2 lab=vdd}
