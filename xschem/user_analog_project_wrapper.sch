@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -189,11 +190,11 @@ lab=REF4}
 N 4840 110 4840 130 {
 lab=vccd1}
 N 4850 110 4850 130 {
-lab=REF3}
+lab=REF4}
 N 4860 110 4860 130 {
 lab=io_analog[6]}
 N 4850 90 4850 110 {
-lab=REF3}
+lab=REF4}
 N 4860 60 4860 110 {
 lab=io_analog[6]}
 N 4840 210 4840 230 {
@@ -303,8 +304,8 @@ C {devices/lab_pin.sym} 4490 220 0 0 {name=l51 sig_type=std_logic lab=txinb
 C {lab_wire.sym} 4980 -360 0 1 {name=l53 sig_type=std_logic lab=io_analog[7]}
 C {noconn.sym} 4920 -330 2 0 {name=l54}
 C {noconn.sym} 4920 -320 2 0 {name=l55}
-C {/foss/designs/sloci_caravel/xschem/topLevel.sym} 4800 200 0 0 {name=x1}
-C {/foss/designs/sloci_caravel/xschem/topLevel.sym} 5230 190 0 0 {name=x2}
+C {topLevel.sym} 4800 200 0 0 {name=x5}
+C {topLevel.sym} 5230 190 0 0 {name=x5}
 C {devices/lab_pin.sym} 5270 210 0 0 {name=l56 sig_type=std_logic lab=vssa1}
 C {devices/lab_pin.sym} 5270 110 0 0 {name=l57 sig_type=std_logic lab=vccd1}
 C {devices/lab_pin.sym} 4780 170 0 0 {name=l58 sig_type=std_logic lab=io_in[13]}
