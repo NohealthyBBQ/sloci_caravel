@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1666563971
+timestamp 1666387681
 << metal1 >>
 rect 1220 8010 1230 8074
 rect 1294 8010 1304 8074
@@ -98,13 +98,13 @@ rect 1259 -810 1260 -700
 rect 1370 -810 1371 -700
 rect 1259 -811 1371 -810
 use cmfb1  cmfb1_0
-timestamp 1666563879
+timestamp 1666387381
 transform 0 1 8026 -1 0 697
-box -8020 -7760 -2721 18240
-use cmfb2  cmfb2_0
-timestamp 1666563939
+box -8100 -7760 -2801 18240
+use cmfb1  cmfb1_1
+timestamp 1666387381
 transform 0 1 8070 -1 0 -8125
-box -8180 -7760 -2881 18240
+box -8100 -7760 -2801 18240
 use cons_cw  cons_cw_0
 timestamp 1662976792
 transform 1 0 -46324 0 1 8198

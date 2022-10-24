@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662990520
+timestamp 1666563971
 << locali >>
 rect 3988 -59524 4946 -59486
 rect 5164 -59618 5202 -59504
@@ -740,25 +740,25 @@ timestamp 1662988209
 transform 0 1 10827 -1 0 -59659
 box -211 -5953 211 5953
 use stage0  stage0_0
-timestamp 1662974608
+timestamp 1666563971
 transform 1 0 18 0 1 5376
-box 0 -5324 26310 8797
+box 0 -5244 26310 8717
 use stage1  stage1_0
-timestamp 1662978535
+timestamp 1666563971
 transform 1 0 20 0 1 -8826
-box 0 -5324 26310 8797
+box 0 -5244 26310 8717
 use stage1  stage1_1
-timestamp 1662978535
+timestamp 1666563971
 transform 1 0 20 0 1 -23028
-box 0 -5324 26310 8797
+box 0 -5244 26310 8717
 use stage1  stage1_2
-timestamp 1662978535
+timestamp 1666563971
 transform 1 0 20 0 1 -37238
-box 0 -5324 26310 8797
+box 0 -5244 26310 8717
 use stage1  stage1_3
-timestamp 1662978535
+timestamp 1666563971
 transform 1 0 20 0 1 -51440
-box 0 -5324 26310 8797
+box 0 -5244 26310 8717
 << labels >>
 rlabel space 2274 8444 2441 13391 0 vdd
 rlabel space 304 8136 490 14085 0 vss
