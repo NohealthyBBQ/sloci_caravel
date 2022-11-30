@@ -1,0 +1,14 @@
+(see https://stackoverflow.com/questions/35518688/git-lfs-refused-to-track-my-large-files-properly-until-i-did-the-following)
+
+
+git lfs track "*.zip"
+git add .gitattributes
+git commit -m "Updated the attributes"
+git push
+git add my_large_file.zip
+git lfs ls-files
+
+And here I would ensure that I saw my_large_file.zip being tracked.
+
+git commit -m "Now I am adding the large file"
+git pus
