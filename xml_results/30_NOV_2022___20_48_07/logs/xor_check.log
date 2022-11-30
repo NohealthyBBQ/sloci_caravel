@@ -1,0 +1,267 @@
+Reading file /home/zexious/project/sloci_caravel_vco_fix/gds/user_analog_project_wrapper.gds for cell user_analog_project_wrapper
+dbu=0.001
+cell user_analog_project_wrapper dbu-bbox(ll;ur)=(-4000,-4000;2924000,3524000)
+cell user_analog_project_wrapper dbu-bbox(left,bottom,right,top)=(-4000,-4000,2924000,3524000)
+cell user_analog_project_wrapper dbu-size(width,height)=(2928000,3528000)
+cell user_analog_project_wrapper micron-bbox(left,bottom,right,top)=(-4.0,-4.0,2924.0,3524.0)
+cell user_analog_project_wrapper micron-size(width,height)=(2928.0,3528.0)
+Done.
+
+Magic 8.3 revision 315 - Compiled on Tue Oct 11 20:27:25 UTC 2022.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130B ...
+2 Magic internal units = 1 Lambda
+Input style sky130(vendor): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130B Device Generator Menu ...
+Loading "/home/zexious/mpw_precheck/checks/xor_check/erase_box.tcl" from command line.
+CIF input style is now "sky130(vendor)"
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: user_analog_project_wrapper
+Reading "sky130_fd_pr__res_xhigh_po_5p73_QP6N54".
+Reading "sky130_fd_pr__res_xhigh_po_5p73_4C7XCD".
+Reading "sky130_fd_pr__nfet_01v8_lvt_6H2JYD".
+Reading "sky130_fd_pr__nfet_01v8_lvt_G3ZQK6".
+Reading "sky130_fd_pr__nfet_01v8_lvt_FKGFGD".
+Reading "cons_cw".
+Reading "sky130_fd_pr__res_xhigh_po_5p73_Q3K92U".
+Reading "sky130_fd_pr__res_high_po_0p35_ZMQPMJ".
+Reading "sky130_fd_pr__pfet_01v8_lvt_ER7KZU".
+Reading "sky130_fd_pr__pfet_01v8_lvt_X3YSY6".
+Reading "sky130_fd_pr__nfet_01v8_lvt_F8HAAN".
+Reading "sky130_fd_pr__nfet_01v8_lvt_BSMWRE".
+Reading "sky130_fd_pr__nfet_01v8_lvt_EA9ZG2".
+Reading "sky130_fd_pr__cap_mim_m3_1_L4YDVW".
+Reading "cmfb2".
+Reading "cmfb1".
+Reading "stage1".
+Reading "sky130_fd_pr__nfet_01v8_lvt_L3LEKD".
+Reading "cons1".
+Reading "stage0".
+Reading "sky130_fd_pr__nfet_01v8_lvt_XA5MKQ".
+Reading "sky130_fd_pr__nfet_01v8_lvt_72NHPP".
+Reading "sky130_fd_pr__nfet_01v8_lvt_8PSHEW".
+Reading "sky130_fd_pr__res_high_po_0p35_C28PVF".
+Reading "sky130_fd_pr__nfet_01v8_lvt_HFYJAZ".
+Reading "fb".
+Reading "top".
+Reading "VGA_routing".
+Reading "sky130_fd_pr__pfet_01v8_lvt_75KH85".
+Reading "sky130_fd_pr__res_high_po_5p73_W59YBA".
+Reading "sky130_fd_pr__res_high_po_2p85_P79JE3".
+Reading "sky130_fd_pr__nfet_01v8_lvt_HNLS5R".
+Reading "sky130_fd_pr__nfet_01v8_lvt_YTLFGX".
+Reading "sky130_fd_pr__nfet_01v8_lvt_LELFGX".
+Reading "output_buffer".
+CIF file read warning: CIF style sky130(vendor): units rescaled by factor of 5 / 1
+Reading "sky130_fd_pr__res_high_po_2p85_MM89SS".
+Reading "sky130_fd_pr__nfet_01v8_lvt_9DHFGX".
+Reading "sky130_fd_pr__pfet_01v8_lvt_D3Z634".
+Reading "sky130_fd_pr__pfet_01v8_lvt_D3M934".
+Reading "sky130_fd_pr__pfet_01v8_lvt_D3ZSZ4".
+Reading "bias_calc".
+Reading "sky130_fd_pr__nfet_01v8_lvt_B6HS5D".
+Reading "sky130_fd_pr__nfet_01v8_lvt_BX7S53".
+Reading "sky130_fd_pr__nfet_01v8_lvt_DJ7QE5".
+Reading "sky130_fd_pr__nfet_01v8_lvt_648S5X".
+Reading "sky130_fd_pr__cap_mim_m3_2_FJFAMD".
+Reading "sky130_fd_pr__cap_mim_m3_2_VCH7EQ".
+Reading "sky130_fd_pr__cap_mim_m3_2_3ZFDVT".
+Reading "sky130_fd_pr__cap_mim_m3_2_WCTZRP".
+Reading "sky130_fd_pr__cap_mim_m3_2_WCTBV5".
+Reading "cap_bank".
+Reading "sky130_fd_pr__res_high_po_2p85_MXEQGY".
+Reading "sky130_fd_pr__nfet_01v8_lvt_6BNFGK".
+Reading "sky130_fd_pr__cap_mim_m3_1_4RCNTW".
+Reading "vop_dec".
+Reading "amp_dec".
+Reading "sky130_fd_pr__res_high_po_5p73_YZEQ6M".
+Reading "buffer_amp".
+Reading "buffer_amp_vop".
+Reading "core_osc_amp".
+Reading "core_osc".
+Reading "VCO".
+Reading "TX_line".
+Reading "sky130_fd_pr__res_xhigh_po_5p73_UZMRKM".
+Reading "XM_Rref".
+Reading "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40".
+Reading "XM_bjt".
+Reading "sky130_fd_pr__pfet_01v8_lvt_Q24T46".
+Reading "sky130_fd_pr__pfet_01v8_lvt_MUVY4U".
+Reading "XM_current_gate".
+Reading "XM_current_gate_with_dummy".
+Reading "sky130_fd_pr__res_high_po_2p85_7J2RPB".
+Reading "sky130_fd_pr__cap_mim_m3_1_EN3Q86".
+Reading "sky130_fd_pr__nfet_01v8_lvt_7MFZYU".
+Reading "XM_tail".
+Reading "sky130_fd_pr__pfet_01v8_lvt_MBDTEX".
+Reading "sky130_fd_pr__pfet_01v8_lvt_B64SAM".
+Reading "XM_ppair".
+Reading "sky130_fd_pr__nfet_01v8_lvt_E96B6C".
+Reading "sky130_fd_pr__nfet_01v8_lvt_A5VCMN".
+Reading "XM_diffpair".
+Reading "sky130_fd_pr__pfet_01v8_lvt_D74VRS".
+Reading "XM_cs".
+Reading "sky130_fd_pr__nfet_01v8_lvt_USQY94".
+Reading "XM_actload2".
+Reading "opamp_realcomp3_usefinger".
+Reading "sky130_fd_pr__res_high_po_1p41_GWJZ59".
+Reading "sky130_fd_pr__res_high_po_1p41_HX7ZEK".
+Reading "XM_bjt_out".
+Reading "sky130_fd_pr__pfet_01v8_lvt_9UM225".
+Reading "XM_feedbackmir2".
+Reading "sky130_fd_pr__pfet_01v8_lvt_8URDWJ".
+Reading "XM_feedbackmir".
+Reading "sky130_fd_pr__nfet_01v8_lvt_QA4PPD".
+Reading "XM_otabias_nmos".
+Reading "sky130_fd_pr__pfet_01v8_lvt_MUAP4U".
+Reading "XM_otabias_pmos".
+Reading "sky130_fd_pr__res_high_po_1p41_2TBR6S".
+Reading "sky130_fd_pr__pfet_01v8_TSNZVH".
+Reading "sky130_fd_pr__nfet_01v8_Y5UG24".
+Reading "sky130_fd_pr__cap_mim_m3_1_Y9W37A".
+Reading "XM_pdn".
+Reading "sky130_fd_pr__res_high_po_1p41_6ZUZ5C".
+Reading "sky130_fd_pr__res_high_po_1p41_S8KB58".
+Reading "sky130_fd_pr__nfet_01v8_lvt_64S6GM".
+Reading "sky130_fd_pr__nfet_01v8_lvt_64DJ5N".
+Reading "XM_output_mirr".
+Reading "XM_output_mirr_combined".
+Reading "XM_output_mirr_combined_with_dummy".
+Reading "BGR_lvs".
+Reading "user_analog_project_wrapper".
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  42.880 x 3520.000  (-42.880,  0.000), ( 0.000,  3520.000)  150937.594
+lambda:   4288.00 x 352000.00  (-4288.00,  0.00 ), (  0.00,  352000.00)  1509376000.00
+internal:   8576 x 704000  ( -8576,  0    ), (     0,  704000)  6037504000
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  42.500 x 3520.000  ( 2920.000,  0.000), ( 2962.500,  3520.000)  149600.000
+lambda:   4250.00 x 352000.00  ( 292000.00,  0.00 ), ( 296250.00,  352000.00)  1496000000.00
+internal:   8500 x 704000  ( 584000,  0    ), ( 592500,  704000)  5984000000
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  3005.380 x 37.530  (-42.880, -37.530), ( 2962.500,  0.000)  112791.906
+lambda:   300538.00 x 3753.00  (-4288.00, -3753.00), ( 296250.00,  0.00 )  1127919104.00
+internal: 601076 x 7506    ( -8576, -7506 ), ( 592500,  0    )  4511676456
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  3005.380 x 37.210  (-42.880,  3520.000), ( 2962.500,  3557.210)  111830.188
+lambda:   300538.00 x 3721.00  (-4288.00,  352000.00), ( 296250.00,  355721.00)  1118301952.00
+internal: 601076 x 7442    ( -8576,  704000), ( 592500,  711442)  4473207592
+   Generating output for cell xor_target
+
+Magic 8.3 revision 315 - Compiled on Tue Oct 11 20:27:25 UTC 2022.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130B ...
+2 Magic internal units = 1 Lambda
+Input style sky130(vendor): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130B Device Generator Menu ...
+Loading "/home/zexious/mpw_precheck/checks/xor_check/erase_box.tcl" from command line.
+CIF input style is now "sky130(vendor)"
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: user_analog_project_wrapper_empty
+Reading "user_analog_project_wrapper".
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  42.880 x 3520.000  (-42.880,  0.000), ( 0.000,  3520.000)  150937.594
+lambda:   4288.00 x 352000.00  (-4288.00,  0.00 ), (  0.00,  352000.00)  1509376000.00
+internal:   8576 x 704000  ( -8576,  0    ), (     0,  704000)  6037504000
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  42.500 x 3520.000  ( 2920.000,  0.000), ( 2962.500,  3520.000)  149600.000
+lambda:   4250.00 x 352000.00  ( 292000.00,  0.00 ), ( 296250.00,  352000.00)  1496000000.00
+internal:   8500 x 704000  ( 584000,  0    ), ( 592500,  704000)  5984000000
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  3005.380 x 37.530  (-42.880, -37.530), ( 2962.500,  0.000)  112791.906
+lambda:   300538.00 x 3753.00  (-4288.00, -3753.00), ( 296250.00,  0.00 )  1127919104.00
+internal: 601076 x 7506    ( -8576, -7506 ), ( 592500,  0    )  4511676456
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  3005.380 x 37.210  (-42.880,  3520.000), ( 2962.500,  3557.210)  111830.188
+lambda:   300538.00 x 3721.00  (-4288.00,  352000.00), ( 296250.00,  355721.00)  1118301952.00
+internal: 601076 x 7442    ( -8576,  704000), ( 592500,  711442)  4473207592
+   Generating output for cell xor_target
+Reading /home/zexious/project/sloci_caravel_vco_fix/precheck_results/30_NOV_2022___20_48_07/outputs/user_analog_project_wrapper_erased.gds ..
+Reading /home/zexious/project/sloci_caravel_vco_fix/precheck_results/30_NOV_2022___20_48_07/outputs/user_analog_project_wrapper_empty_erased.gds ..
+--- Running XOR for 69/20 ---
+"input" in: xor.rb.drc:39
+    Polygons (raw): 494 (flat)  494 (hierarchical)
+    Elapsed: 0.000s  Memory: 521.00M
+"input" in: xor.rb.drc:39
+    Polygons (raw): 494 (flat)  494 (hierarchical)
+    Elapsed: 0.010s  Memory: 521.00M
+"^" in: xor.rb.drc:39
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 521.00M
+XOR differences: 0
+"output" in: xor.rb.drc:43
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 521.00M
+--- Running XOR for 70/20 ---
+"input" in: xor.rb.drc:39
+    Polygons (raw): 184 (flat)  184 (hierarchical)
+    Elapsed: 0.010s  Memory: 521.00M
+"input" in: xor.rb.drc:39
+    Polygons (raw): 184 (flat)  184 (hierarchical)
+    Elapsed: 0.000s  Memory: 521.00M
+"^" in: xor.rb.drc:39
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 521.00M
+XOR differences: 0
+"output" in: xor.rb.drc:43
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 521.00M
+--- Running XOR for 72/20 ---
+"input" in: xor.rb.drc:39
+    Polygons (raw): 6 (flat)  6 (hierarchical)
+    Elapsed: 0.000s  Memory: 521.00M
+"input" in: xor.rb.drc:39
+    Polygons (raw): 6 (flat)  6 (hierarchical)
+    Elapsed: 0.010s  Memory: 521.00M
+"^" in: xor.rb.drc:39
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 521.00M
+XOR differences: 0
+"output" in: xor.rb.drc:43
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 521.00M
+--- Running XOR for 81/14 ---
+"input" in: xor.rb.drc:39
+    Polygons (raw): 1 (flat)  1 (hierarchical)
+    Elapsed: 0.000s  Memory: 521.00M
+"input" in: xor.rb.drc:39
+    Polygons (raw): 1 (flat)  1 (hierarchical)
+    Elapsed: 0.010s  Memory: 521.00M
+"^" in: xor.rb.drc:39
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 521.00M
+XOR differences: 0
+"output" in: xor.rb.drc:43
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.010s  Memory: 521.00M
+Writing layout file: /home/zexious/project/sloci_caravel_vco_fix/precheck_results/30_NOV_2022___20_48_07/outputs/user_analog_project_wrapper.xor.gds ..
+Total elapsed: 0.100s  Memory: 521.00M
