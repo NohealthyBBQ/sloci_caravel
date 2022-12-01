@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1669738703
+timestamp 1669926749
 << metal1 >>
 rect 14920 682870 15420 682910
 rect 14920 682040 14960 682870
@@ -1255,7 +1255,7 @@ rect -100 0 0 704000
 rect 584000 0 584100 704000
 rect -100 -100 584100 0
 use BGR_lvs  BGR_lvs_0
-timestamp 1666387681
+timestamp 1669926749
 transform 1 0 254230 0 1 568403
 box -14230 -10403 62405 12600
 use TX_line  TX_line_0
@@ -1350,6 +1350,7 @@ port 35 nsew signal bidirectional
 rlabel metal3 s 582300 677984 584800 682984 0 io_analog[0]
 port 36 nsew signal bidirectional
 rlabel metal3 0 680242 1700 685242 0 io_analog[10]
+port 678 nsew
 rlabel metal3 s 566594 702300 571594 704800 0 io_analog[1]
 port 38 nsew signal bidirectional
 rlabel metal3 s 465394 702300 470394 704800 0 io_analog[2]

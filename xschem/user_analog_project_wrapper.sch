@@ -211,6 +211,7 @@ N 4910 180 4970 180 {
 lab=io_analog[2]}
 N 4910 160 4970 160 {
 lab=io_analog[3]}
+N 4980 -360 5120 -360 {}
 C {devices/iopin.sym} 3240 -470 0 0 {name=p1 lab=vdda1}
 C {devices/iopin.sym} 3240 -440 0 0 {name=p2 lab=vdda2}
 C {devices/iopin.sym} 3240 -410 0 0 {name=p3 lab=vssa1}
@@ -301,7 +302,7 @@ C {devices/lab_pin.sym} 4490 160 0 0 {name=l50 sig_type=std_logic lab=txina
 }
 C {devices/lab_pin.sym} 4490 220 0 0 {name=l51 sig_type=std_logic lab=txinb
 }
-C {lab_wire.sym} 4980 -360 0 1 {name=l53 sig_type=std_logic lab=io_analog[7]}
+C {lab_wire.sym} 5120 -360 0 1 {name=l53 sig_type=std_logic lab=io_analog[7]}
 C {noconn.sym} 4920 -330 2 0 {name=l54}
 C {noconn.sym} 4920 -320 2 0 {name=l55}
 C {topLevel.sym} 4800 200 0 0 {name=x5}

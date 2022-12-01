@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1666387681
+timestamp 1669926749
 << nwell >>
 rect -8726 10225 -8100 11452
 << locali >>
@@ -760,11 +760,11 @@ timestamp 1665771957
 transform 0 1 -13057 -1 0 -5305
 box -1417 -1173 5029 21223
 use XM_bjt  XM_bjt_0
-timestamp 1666387681
+timestamp 1669926749
 transform 1 0 -1950 0 1 -2620
 box 0 0 6492 9068
 use XM_bjt_out  XM_bjt_out_0
-timestamp 1666387681
+timestamp 1669926749
 transform 1 0 -2070 0 1 6780
 box 0 0 6492 3916
 use XM_current_gate_with_dummy  XM_current_gate_with_dummy_0
