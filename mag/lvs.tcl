@@ -4,3 +4,4 @@ set filename [cellname list window]
 set spicefilename [lindex [split $filename .] 0]
 #ext2spice -d -o "./lvs/$spicefilename.spice"
 ext2spice -o "./lvs/$spicefilename.spice"
+feedback save feedback.txt

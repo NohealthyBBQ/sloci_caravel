@@ -1,0 +1,75 @@
+2022-12-01 22:11:28 - [INFO] - {{EXTRACTING FILES}} Extracting compressed files in: /home/zexious/project/sloci_caravel
+2022-12-01 22:11:28 - [INFO] - {{Project Type Info}} analog
+2022-12-01 22:11:29 - [INFO] - {{Project GDS Info}} user_analog_project_wrapper: aa08a937835448043c773cfd4163716688e4c20b
+2022-12-01 22:11:29 - [INFO] - {{Tools Info}} KLayout: v0.27.10 | Magic: v8.3.315
+2022-12-01 22:11:29 - [INFO] - {{PDKs Info}} SKY130A: f70d8ca46961ff92719d8870a18a076370b85f6c | Open PDKs: 120b0bd69c745825a0b8b76f364043a1cd08bb6a
+2022-12-01 22:11:29 - [INFO] - {{START}} Precheck Started, the full log 'precheck.log' will be located in '/home/zexious/project/sloci_caravel/precheck_results/01_DEC_2022___22_11_28/logs'
+2022-12-01 22:11:29 - [INFO] - {{PRECHECK SEQUENCE}} Precheck will run the following checks: [License, Makefile, Default, Documentation, Consistency, GPIO-Defines, XOR, Magic DRC, Klayout FEOL, Klayout BEOL, Klayout Offgrid, Klayout Metal Minimum Clear Area Density, Klayout Pin Label Purposes Overlapping Drawing, Klayout ZeroArea]
+2022-12-01 22:11:29 - [INFO] - {{STEP UPDATE}} Executing Check 1 of 14: License
+2022-12-01 22:11:29 - [INFO] - An approved LICENSE (Apache-2.0) was found in /home/zexious/project/sloci_caravel.
+2022-12-01 22:11:29 - [INFO] - {{MAIN LICENSE CHECK PASSED}} An approved LICENSE was found in project root.
+2022-12-01 22:11:30 - [INFO] - An approved LICENSE (Apache-2.0) was found in /home/zexious/project/sloci_caravel.
+2022-12-01 22:11:30 - [INFO] - {{SUBMODULES LICENSE CHECK PASSED}} No prohibited LICENSE file(s) was found in project submodules
+2022-12-01 22:11:30 - [ERROR] - SPDX COMPLIANCE FILE UNICODE DECODE EXCEPTION in (/home/zexious/project/sloci_caravel/.swp): 'utf-8' codec can't decode byte 0xb7 in position 4: invalid start byte
+2022-12-01 22:11:30 - [ERROR] - SPDX COMPLIANCE SYMLINK FILE NOT FOUND in /home/zexious/project/sloci_caravel/openlane/Makefile
+2022-12-01 22:11:30 - [WARNING] - {{SPDX COMPLIANCE CHECK FAILED}} Found 217 non-compliant file(s) with the SPDX Standard.
+2022-12-01 22:11:30 - [INFO] - SPDX COMPLIANCE: NON-COMPLIANT FILE(S) PREVIEW: ['/home/zexious/project/sloci_caravel/sourceme_precheck', '/home/zexious/project/sloci_caravel/test_push', '/home/zexious/project/sloci_caravel/.gitattributes', '/home/zexious/project/sloci_caravel/mag/sky130_fd_pr__nfet_01v8_lvt_7MFZYU.ext', '/home/zexious/project/sloci_caravel/mag/sky130A_setup.tcl', '/home/zexious/project/sloci_caravel/mag/XM_output_mirr_combined.ext', '/home/zexious/project/sloci_caravel/mag/sky130A-GDS.tech', '/home/zexious/project/sloci_caravel/mag/sky130_fd_pr__pfet_01v8_lvt_75KH85.ext', '/home/zexious/project/sloci_caravel/mag/netgen.sh', '/home/zexious/project/sloci_caravel/mag/sky130_fd_pr__cap_mim_m3_1_Y9W37A.ext', '/home/zexious/project/sloci_caravel/mag/sky130_fd_pr__res_high_po_1p41_6ZUZ5C.ext', '/home/zexious/project/sloci_caravel/mag/stage0.ext', '/home/zexious/project/sloci_caravel/mag/sky130_fd_pr__res_high_po_1p41_2TBR6S.ext', '/home/zexious/project/sloci_caravel/mag/cmfb2.ext', '/home/zexious/project/sloci_caravel/mag/XM_otabias_nmos.ext']
+2022-12-01 22:11:30 - [INFO] - For the full SPDX compliance report check: /home/zexious/project/sloci_caravel/precheck_results/01_DEC_2022___22_11_28/logs/spdx_compliance_report.log
+2022-12-01 22:11:30 - [INFO] - {{STEP UPDATE}} Executing Check 2 of 14: Makefile
+2022-12-01 22:11:30 - [INFO] - {{MAKEFILE CHECK PASSED}} Makefile valid.
+2022-12-01 22:11:30 - [INFO] - {{STEP UPDATE}} Executing Check 3 of 14: Default
+2022-12-01 22:11:30 - [INFO] - {{README DEFAULT CHECK PASSED}} Project 'README.md' was modified and is not identical to the default 'README.md'
+2022-12-01 22:11:31 - [INFO] - {{CONTENT DEFAULT CHECK PASSED}} Project 'gds' was modified and is not identical to the default 'gds'
+2022-12-01 22:11:31 - [INFO] - {{STEP UPDATE}} Executing Check 4 of 14: Documentation
+2022-12-01 22:11:31 - [INFO] - {{DOCUMENTATION CHECK PASSED}} Project documentation is appropriate.
+2022-12-01 22:11:31 - [INFO] - {{STEP UPDATE}} Executing Check 5 of 14: Consistency
+2022-12-01 22:11:32 - [INFO] - {{NETLIST CONSISTENCY CHECK PASSED}} caravan netlist passed all consistency checks.
+2022-12-01 22:11:32 - [WARNING] - PORTS CHECK FAILED: user_analog_project_wrapper ports do not match the golden wrapper ports. Mismatching ports are : ['vssa1']
+2022-12-01 22:11:32 - [INFO] - COMPLEXITY CHECK PASSED: Netlist user_analog_project_wrapper contains at least 1 instances (5 instances). 
+2022-12-01 22:11:32 - [INFO] - MODELING CHECK PASSED: Netlist user_analog_project_wrapper is structural.
+2022-12-01 22:11:32 - [INFO] - LAYOUT CHECK PASSED: The GDS layout for user_analog_project_wrapper matches the provided structural netlist.
+2022-12-01 22:11:32 - [WARNING] - {{NETLIST CONSISTENCY CHECK FAILED}} user_analog_project_wrapper netlist failed 1 consistency check(s): ['PORTS'].
+2022-12-01 22:11:32 - [WARNING] - {{CONSISTENCY CHECK FAILED}} The user netlist and the top netlist are not valid.
+2022-12-01 22:11:32 - [INFO] - {{STEP UPDATE}} Executing Check 6 of 14: GPIO-Defines
+2022-12-01 22:11:32 - [INFO] - GPIO-DEFINES: Checking verilog/rtl/user_defines.v, parsing files: ['/home/zexious/mpw_precheck/checks/gpio_defines_check/verilog_assets/gpio_modes_base.v', '/home/zexious/project/sloci_caravel/verilog/rtl/user_defines.v', '/home/zexious/mpw_precheck/checks/gpio_defines_check/verilog_assets/gpio_modes_observe.v']
+2022-12-01 22:11:33 - [INFO] - GPIO-DEFINES report path: /home/zexious/project/sloci_caravel/precheck_results/01_DEC_2022___22_11_28/outputs/reports/gpio_defines.report
+2022-12-01 22:11:33 - [INFO] - {{GPIO-DEFINES CHECK PASSED}} The user verilog/rtl/user_defines.v is valid.
+2022-12-01 22:11:33 - [INFO] - {{STEP UPDATE}} Executing Check 7 of 14: XOR
+2022-12-01 22:11:50 - [INFO] - {{XOR CHECK UPDATE}} Total XOR differences: 0, for more details view /home/zexious/project/sloci_caravel/precheck_results/01_DEC_2022___22_11_28/outputs/user_analog_project_wrapper.xor.gds
+2022-12-01 22:11:50 - [INFO] - {{XOR CHECK PASSED}} The GDS file has no XOR violations.
+2022-12-01 22:11:50 - [INFO] - {{STEP UPDATE}} Executing Check 8 of 14: Magic DRC
+2022-12-01 22:12:11 - [ERROR] - Violation Message 'Spacing of metal4 features attached to and within 0.40um of large metal4 < 0.4um (met4.5a)' found 2 times.
+2022-12-01 22:12:11 - [ERROR] - 2 DRC violations
+2022-12-01 22:12:11 - [WARNING] - {{MAGIC DRC CHECK FAILED}} The GDS file, user_analog_project_wrapper.gds, has DRC violations.
+2022-12-01 22:12:11 - [INFO] - {{STEP UPDATE}} Executing Check 9 of 14: Klayout FEOL
+2022-12-01 22:12:11 - [INFO] - in CUSTOM klayout_gds_drc_check
+2022-12-01 22:12:11 - [INFO] - run: klayout -b -r /home/zexious/mpw_precheck/checks/tech-files/sky130A_mr.drc -rd input=/home/zexious/project/sloci_caravel/gds/user_analog_project_wrapper.gds -rd topcell=user_analog_project_wrapper -rd report=/home/zexious/project/sloci_caravel/precheck_results/01_DEC_2022___22_11_28/outputs/reports/klayout_feol_check.xml -rd feol=true >& /home/zexious/project/sloci_caravel/precheck_results/01_DEC_2022___22_11_28/logs/klayout_feol_check.log
+2022-12-01 22:12:16 - [INFO] - No DRC Violations found
+2022-12-01 22:12:16 - [INFO] - {{Klayout FEOL CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+2022-12-01 22:12:16 - [INFO] - {{STEP UPDATE}} Executing Check 10 of 14: Klayout BEOL
+2022-12-01 22:12:16 - [INFO] - in CUSTOM klayout_gds_drc_check
+2022-12-01 22:12:16 - [INFO] - run: klayout -b -r /home/zexious/mpw_precheck/checks/tech-files/sky130A_mr.drc -rd input=/home/zexious/project/sloci_caravel/gds/user_analog_project_wrapper.gds -rd topcell=user_analog_project_wrapper -rd report=/home/zexious/project/sloci_caravel/precheck_results/01_DEC_2022___22_11_28/outputs/reports/klayout_beol_check.xml -rd beol=true >& /home/zexious/project/sloci_caravel/precheck_results/01_DEC_2022___22_11_28/logs/klayout_beol_check.log
+2022-12-01 22:15:21 - [INFO] - No DRC Violations found
+2022-12-01 22:15:21 - [INFO] - {{Klayout BEOL CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+2022-12-01 22:15:21 - [INFO] - {{STEP UPDATE}} Executing Check 11 of 14: Klayout Offgrid
+2022-12-01 22:15:21 - [INFO] - in CUSTOM klayout_gds_drc_check
+2022-12-01 22:15:21 - [INFO] - run: klayout -b -r /home/zexious/mpw_precheck/checks/tech-files/sky130A_mr.drc -rd input=/home/zexious/project/sloci_caravel/gds/user_analog_project_wrapper.gds -rd topcell=user_analog_project_wrapper -rd report=/home/zexious/project/sloci_caravel/precheck_results/01_DEC_2022___22_11_28/outputs/reports/klayout_offgrid_check.xml -rd offgrid=true >& /home/zexious/project/sloci_caravel/precheck_results/01_DEC_2022___22_11_28/logs/klayout_offgrid_check.log
+2022-12-01 22:15:41 - [INFO] - No DRC Violations found
+2022-12-01 22:15:41 - [INFO] - {{Klayout Offgrid CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+2022-12-01 22:15:41 - [INFO] - {{STEP UPDATE}} Executing Check 12 of 14: Klayout Metal Minimum Clear Area Density
+2022-12-01 22:15:41 - [INFO] - in CUSTOM klayout_gds_drc_check
+2022-12-01 22:15:41 - [INFO] - run: klayout -b -r /home/zexious/mpw_precheck/checks/drc_checks/klayout/met_min_ca_density.lydrc -rd input=/home/zexious/project/sloci_caravel/gds/user_analog_project_wrapper.gds -rd topcell=user_analog_project_wrapper -rd report=/home/zexious/project/sloci_caravel/precheck_results/01_DEC_2022___22_11_28/outputs/reports/klayout_met_min_ca_density_check.xml >& /home/zexious/project/sloci_caravel/precheck_results/01_DEC_2022___22_11_28/logs/klayout_met_min_ca_density_check.log
+2022-12-01 22:15:43 - [INFO] - No DRC Violations found
+2022-12-01 22:15:43 - [INFO] - {{Klayout Metal Minimum Clear Area Density CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+2022-12-01 22:15:43 - [INFO] - {{STEP UPDATE}} Executing Check 13 of 14: Klayout Pin Label Purposes Overlapping Drawing
+2022-12-01 22:15:43 - [INFO] - in CUSTOM klayout_gds_drc_check
+2022-12-01 22:15:43 - [INFO] - run: klayout -b -r /home/zexious/mpw_precheck/checks/drc_checks/klayout/pin_label_purposes_overlapping_drawing.rb.drc -rd input=/home/zexious/project/sloci_caravel/gds/user_analog_project_wrapper.gds -rd topcell=user_analog_project_wrapper -rd report=/home/zexious/project/sloci_caravel/precheck_results/01_DEC_2022___22_11_28/outputs/reports/klayout_pin_label_purposes_overlapping_drawing_check.xml -rd top_cell_name=user_analog_project_wrapper >& /home/zexious/project/sloci_caravel/precheck_results/01_DEC_2022___22_11_28/logs/klayout_pin_label_purposes_overlapping_drawing_check.log
+2022-12-01 22:15:47 - [INFO] - No DRC Violations found
+2022-12-01 22:15:47 - [INFO] - {{Klayout Pin Label Purposes Overlapping Drawing CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+2022-12-01 22:15:47 - [INFO] - {{STEP UPDATE}} Executing Check 14 of 14: Klayout ZeroArea
+2022-12-01 22:15:47 - [INFO] - in CUSTOM klayout_gds_drc_check
+2022-12-01 22:15:47 - [INFO] - run: klayout -b -r /home/zexious/mpw_precheck/checks/drc_checks/klayout/zeroarea.rb.drc -rd input=/home/zexious/project/sloci_caravel/gds/user_analog_project_wrapper.gds -rd topcell=user_analog_project_wrapper -rd report=/home/zexious/project/sloci_caravel/precheck_results/01_DEC_2022___22_11_28/outputs/reports/klayout_zeroarea_check.xml -rd cleaned_output=/home/zexious/project/sloci_caravel/precheck_results/01_DEC_2022___22_11_28/outputs/user_analog_project_wrapper_no_zero_areas.gds >& /home/zexious/project/sloci_caravel/precheck_results/01_DEC_2022___22_11_28/logs/klayout_zeroarea_check.log
+2022-12-01 22:15:52 - [INFO] - No DRC Violations found
+2022-12-01 22:15:52 - [INFO] - {{Klayout ZeroArea CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+2022-12-01 22:15:52 - [INFO] - {{FINISH}} Executing Finished, the full log 'precheck.log' can be found in '/home/zexious/project/sloci_caravel/precheck_results/01_DEC_2022___22_11_28/logs'
+2022-12-01 22:15:52 - [CRITICAL] - {{FAILURE}} 1 Check(s) Failed: ['Consistency'] !!!
