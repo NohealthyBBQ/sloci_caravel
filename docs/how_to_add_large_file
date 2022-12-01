@@ -11,4 +11,9 @@ git lfs ls-files
 And here I would ensure that I saw my_large_file.zip being tracked.
 
 git commit -m "Now I am adding the large file"
-git pus
+git push
+
+11/30
+Do NOT use git lfs anymore as E-fabless doesn't support it. Need to compress it to user_analog_project_wrapper.gds.gz file
+
+$gzip user_analog_project_wrapper.gds
