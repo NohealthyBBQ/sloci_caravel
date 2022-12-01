@@ -500,6 +500,14 @@ XX3 X5/IN X4/IN X3/AMP X8/IN X9/IN X3/I4B X3/I4A X3/OUT0 X6/IN X7/IN X3/VOP X3/O
 + X3/BIAS GND VDD GND buffer_amp_vop
 .ends
 
+.subckt sky130_fd_pr__nfet_01v8_lvt_M9466H a_100_n200# a_n158_n200# a_n100_n288# a_n260_n374#
+X0 a_100_n200# a_n100_n288# a_n158_n200# a_n260_n374# sky130_fd_pr__nfet_01v8_lvt ad=5.8e+11p pd=4.58e+06u as=5.8e+11p ps=4.58e+06u w=2e+06u l=1e+06u
+.ends
+
+.subckt TX_line INB OUTA VSUBS
+Xsky130_fd_pr__nfet_01v8_lvt_M9466H_0 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8_lvt_M9466H
+.ends
+
 .subckt sky130_fd_pr__res_xhigh_po_5p73_UZMRKM a_669_10600# a_n3057_n11032# a_n1815_n11032#
 + a_n3057_10600# a_n1815_10600# a_n3187_n11162# a_669_n11032# a_n573_10600# a_n573_n11032#
 + a_1911_n11032# a_1911_10600#
@@ -2298,6 +2306,7 @@ XVCO_0 REF CTRL5 io_in[18] io_analog[10] io_in[17] vdda2 io_analog[8] io_in[16] 
 + io_in_3v3[15] vssa2 VCO
 XVCO_1 REF2 CTRL5 io_in[18] io_analog[10] io_in[17] vdda2 txinb io_in[16] txina io_in_3v3[15]
 + vssa2 VCO
+XTX_line_0 txinb txina vssa2 TX_line
 XBGR_lvs_0 REF2 REF io_analog[7] gpio_analog[7] io_analog[6] BGR_lvs_0/Iout3 BGR_lvs_0/Iout4
 + BGR_lvs_0/Iout5 BGR_lvs_0/Iout6 vccd2 vssa2 BGR_lvs
 XVGA_routing_0 io_in[13] txina io_analog[2] io_analog[5] io_analog[3] txinb BGR_lvs_0/Iout4

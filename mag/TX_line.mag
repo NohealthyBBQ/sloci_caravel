@@ -1,6 +1,10 @@
 magic
 tech sky130A
-timestamp 1662988821
+timestamp 1669931839
+<< locali >>
+rect -11930 -65060 -11680 -65040
+rect -11930 -65190 -11680 -65170
+rect -11930 -65320 -11680 -65300
 << metal1 >>
 rect -12000 7500 110000 12000
 rect -12000 4500 500 7500
@@ -104,6 +108,10 @@ rect 0 -54500 100000 -54000
 rect 0 -57500 500 -54500
 rect 99500 -57500 100000 -54500
 rect 0 -58000 100000 -57500
+use sky130_fd_pr__nfet_01v8_lvt_M9466H  sky130_fd_pr__nfet_01v8_lvt_M9466H_0
+timestamp 1669931839
+transform 1 0 -11805 0 1 -65180
+box -148 -205 148 205
 << labels >>
 flabel metal1 -12000 -64000 110000 -57500 0 FreeSans 20000 0 0 0 GND
 flabel metal5 -1000 1000 0 2000 0 FreeSans 20000 0 0 0 INA
