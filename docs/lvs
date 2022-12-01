@@ -1,0 +1,20 @@
+So far:
+1. under netgen/, spice created from Magic using ext2spice
+2. under xschem/, spice created from xschem with special LVS toggle
+
+
+Top level LVS check:
+
+1. Generate spice from layout:
+    a. In Magic, run the following:
+        extract all
+        ext2spice lvs
+        set filename [cellname list window]
+        set spicefilename [lindex [split $filename .] 0]
+        ext2spice -o "./lvs/$spicefilename.spice"
+        
+    b. This generates a user_analog_project_wrapper.spice file. I moved it under netgen/ folder
+
+2. Generate spice from schematic:
+    a. In xscheme, 
+
