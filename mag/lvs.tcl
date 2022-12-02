@@ -1,3 +1,4 @@
+#extract unique notopports
 extract all
 ext2spice lvs
 set filename [cellname list window]
